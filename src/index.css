@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Ivy Journal";
+  src: url("./assets/ivy-journal.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-cream: #ece8df;
+  --color-ink: #1b1610;
+  --color-coal: #16110b;
+
+  --font-display: "Italiana", serif;
+  --font-serif: "Ivy Journal", "Playfair Display", Georgia, serif;
+  --font-sans: "Raleway", system-ui, sans-serif;
+  --font-script: "Mrs Saint Delafield", cursive;
+
+  --animate-marquee: marquee 28s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
