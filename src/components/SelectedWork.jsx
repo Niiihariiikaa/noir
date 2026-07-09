@@ -42,13 +42,13 @@ const projects = [
 function TextCell({ project }) {
   return (
     <div className="flex h-full flex-col justify-between p-5">
-      <p className="text-[10px] tracking-[0.15em]">{project.code}</p>
+      <p className="text-xs tracking-[0.15em]">{project.code}</p>
       <div>
         <h3 className="font-serif text-2xl">{project.name}</h3>
-        <p className="mt-1 text-[10px] text-ink/70">{project.services}</p>
+        <p className="mt-1 text-sm text-ink/70">{project.services}</p>
         <a
           href="#work"
-          className="mt-5 inline-block border border-ink px-4 py-2 text-[9px] tracking-[0.22em] transition-colors hover:bg-ink hover:text-cream"
+          className="mt-5 inline-block border border-ink px-4 py-2 text-[11px] tracking-[0.22em] transition-colors hover:bg-ink hover:text-cream"
         >
           SEE CASE STUDY
         </a>
@@ -60,7 +60,7 @@ function TextCell({ project }) {
 export default function SelectedWork() {
   return (
     <section id="work" className="border-b border-ink/60">
-      <p className="border-b border-ink/60 py-3 text-center text-[10px] tracking-[0.3em]">
+      <p className="border-b border-ink/60 py-3 text-center text-xs tracking-[0.3em]">
         SELECTED WORK
       </p>
 

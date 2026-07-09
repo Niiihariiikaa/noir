@@ -1,4 +1,4 @@
-const phrases = ["Brands That Convert", "Sites That Sell", "Identities That Stick"];
+﻿const phrases = ["Brands That Convert", "Sites That Sell", "Identities That Stick"];
 
 export default function Marquee() {
   const sequence = Array.from({ length: 4 }, () => phrases).flat();

@@ -1,4 +1,4 @@
-import typewriter from "../assets/belowgooddesignline.png";
+﻿import typewriter from "../assets/belowgooddesignline.png";
 
 export default function Manifesto() {
   return (
@@ -26,7 +26,7 @@ export default function Manifesto() {
           everything else gets easier to design.
         </p>
 
-        <p className="mx-auto mt-6 max-w-md text-[10px] leading-relaxed text-ink/70">
+        <p className="mx-auto mt-6 max-w-md text-sm leading-relaxed text-ink/70">
           Our work blends strategic clarity, typographic discipline, and an
           editor&rsquo;s eye for structure. It&rsquo;s less about chasing trends and more
           about giving a brand the nerve to say one true thing, clearly.

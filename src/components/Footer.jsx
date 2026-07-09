@@ -1,4 +1,4 @@
-import logo from "../assets/NOiR.svg";
+﻿import logo from "../assets/NOiR.svg";
 
 const columns = [
   {
@@ -57,7 +57,7 @@ export default function Footer() {
                   <li key={link}>
                     <a
                       href="#home"
-                      className="text-[10px] text-ink/75 underline underline-offset-4 transition-colors hover:text-ink"
+                      className="text-xs text-ink/75 underline underline-offset-4 transition-colors hover:text-ink"
                     >
                       {link}
                     </a>
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-8 border-t border-ink/40 py-4 text-[9px] tracking-[0.18em] text-ink/70">
+      <div className="flex items-center justify-center gap-8 border-t border-ink/40 py-4 text-[11px] tracking-[0.18em] text-ink/70">
         <p>&copy; NOIR 2026</p>
         <a href="#home" className="transition-colors hover:text-ink">
           TERMS
