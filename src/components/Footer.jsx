@@ -1,6 +1,4 @@
-﻿import logo from "../assets/NOiR.svg";
-
-const columns = [
+﻿const columns = [
   {
     heading: "Studio",
     links: ["Work", "About us", "Services"],
@@ -31,7 +29,7 @@ export default function Footer() {
     <footer className="bg-cream text-ink">
       <div className="mx-auto flex max-w-378 flex-col justify-between gap-12 px-6 pb-12 pt-12 md:flex-row md:px-12">
         <div>
-          <img src={logo} alt="NOIR" className="h-9 w-auto" />
+          <p className="font-logo text-[32px] leading-none">NOiR</p>
           <div className="mt-5 flex gap-2">
             {socials.map((social) => (
               <a

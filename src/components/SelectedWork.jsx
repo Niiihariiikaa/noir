@@ -44,11 +44,11 @@ function TextCell({ project }) {
     <div className="flex h-full flex-col justify-between p-5">
       <p className="text-xs tracking-[0.15em]">{project.code}</p>
       <div>
-        <h3 className="font-serif text-2xl">{project.name}</h3>
-        <p className="mt-1 text-sm text-ink/70">{project.services}</p>
+        <h3 className="font-serif text-[32px]">{project.name}</h3>
+        <p className="mt-1 text-[15px] text-ink/70">{project.services}</p>
         <a
           href="#work"
-          className="mt-5 inline-block border border-ink px-4 py-2 text-[11px] tracking-[0.22em] transition-colors hover:bg-ink hover:text-cream"
+          className="mt-8 inline-block border border-ink px-4 py-2 text-[11px] tracking-[0.22em] transition-colors hover:bg-ink hover:text-cream"
         >
           SEE CASE STUDY
         </a>
@@ -64,29 +64,31 @@ export default function SelectedWork() {
         SELECTED WORK
       </p>
 
-      <div className="hidden md:block">
-        {projects.map((project) => (
-          <div
-            key={project.code}
-            className="grid min-h-95 grid-cols-4 divide-x divide-ink/60 border-b border-ink/60 last:border-b-0"
-          >
-            {[1, 2, 3, 4].map((col) => {
-              if (col === project.layout.text)
-                return <TextCell key={col} project={project} />;
-              if (col === project.layout.image)
-                return (
-                  <div key={col} className="overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.alt}
-                      className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
-                    />
-                  </div>
-                );
-              return <div key={col} />;
-            })}
-          </div>
-        ))}
+      <div className="hidden px-16 pb-5 md:block">
+        <div className="mt-1 border border-ink/60">
+          {projects.map((project) => (
+            <div
+              key={project.code}
+              className="grid h-[56vh] min-h-80 grid-cols-4 divide-x divide-ink/60 border-b border-ink/60 last:border-b-0"
+            >
+              {[1, 2, 3, 4].map((col) => {
+                if (col === project.layout.text)
+                  return <TextCell key={col} project={project} />;
+                if (col === project.layout.image)
+                  return (
+                    <div key={col} className="overflow-hidden">
+                      <img
+                        src={project.image}
+                        alt={project.alt}
+                        className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                      />
+                    </div>
+                  );
+                return <div key={col} />;
+              })}
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Mobile: simple stacked cards */}
