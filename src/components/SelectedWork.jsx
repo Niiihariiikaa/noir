@@ -42,13 +42,13 @@ const projects = [
 function TextCell({ project }) {
   return (
     <div className="flex h-full flex-col justify-between p-5">
-      <p className="text-xs tracking-[0.15em]">{project.code}</p>
+      <p className="text-xs tracking-tighter">{project.code}</p>
       <div>
         <h3 className="font-serif text-[32px]">{project.name}</h3>
         <p className="mt-1 text-[15px] text-ink/70">{project.services}</p>
         <a
           href="#work"
-          className="mt-8 inline-block border border-ink px-4 py-2 text-[11px] tracking-[0.22em] transition-colors hover:bg-ink hover:text-cream"
+          className="mt-8 inline-block border border-ink px-4 py-2 text-[11px] tracking-tighter transition-colors hover:bg-ink hover:text-cream"
         >
           SEE CASE STUDY
         </a>
@@ -60,12 +60,12 @@ function TextCell({ project }) {
 export default function SelectedWork() {
   return (
     <section id="work" className="border-b border-ink/60">
-      <p className="border-b border-ink/60 py-3 text-center text-xs tracking-[0.3em]">
+      <p className="border-b border-ink/60 py-3 text-center text-xs tracking-tighter">
         SELECTED WORK
       </p>
 
       <div className="hidden px-16 pb-5 md:block">
-        <div className="mt-1 border border-ink/60">
+        <div className="border border-t-0 border-ink/60">
           {projects.map((project) => (
             <div
               key={project.code}

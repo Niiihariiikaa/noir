@@ -62,3 +62,13 @@ body {
   letter-spacing: -0.05em;
   -webkit-font-smoothing: antialiased;
 }
+
+/* All text carries the global -5% tracking; the serif display type is
+   tightened further, and only the NOIR wordmark keeps natural spacing. */
+.font-serif {
+  letter-spacing: -0.08em;
+}
+
+.font-logo {
+  letter-spacing: normal;
+}

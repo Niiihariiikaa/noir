@@ -7,7 +7,7 @@ export default function Hero() {
     <section id="home" className="border-b border-ink/60">
       <div className="mx-auto max-w-378 px-6 pt-6 pb-6 md:px-18 md:pt-8">
         {/* Tiny captions row */}
-        <div className="grid grid-cols-1 gap-2 text-xs tracking-[0.08em] text-ink/80 md:grid-cols-[0.9fr_1.1fr]">
+        <div className="grid grid-cols-1 gap-2 text-xs tracking-tighter text-ink/80 md:grid-cols-[0.9fr_1.1fr]">
           <p>Design is an argument, not decoration.</p>
           <p>Clarity is the only aesthetic that lasts.</p>
         </div>
@@ -59,7 +59,7 @@ export default function Hero() {
           </div>
 
           <div className="md:col-span-4 md:col-start-9">
-            <p className="mb-2 text-xs tracking-[0.2em]">VOL. 01</p>
+            <p className="mb-2 text-xs tracking-tighter">VOL. 01</p>
             <img
               src={laceysHero}
               alt="Person holding a Lacey's tote bag"

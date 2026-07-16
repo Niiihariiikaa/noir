@@ -13,7 +13,7 @@ export default function Contact() {
         </div>
 
         <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
-          <p className="text-xs tracking-[0.3em]">LET&rsquo;S CONNECT</p>
+          <p className="text-xs tracking-tighter">LET&rsquo;S CONNECT</p>
           <h2 className="mt-6 font-serif text-3xl md:text-4xl">
             The <em>Brief</em> Before The Brand.
           </h2>
@@ -30,7 +30,7 @@ export default function Contact() {
           </p>
           <a
             href="mailto:hello@noirstudio.design"
-            className="mt-10 inline-block self-start border border-ink px-6 py-3 text-xs tracking-[0.28em] transition-colors hover:bg-ink hover:text-cream"
+            className="mt-10 inline-block self-start border border-ink px-6 py-3 text-xs tracking-tighter transition-colors hover:bg-ink hover:text-cream"
           >
             WORK WITH US
           </a>

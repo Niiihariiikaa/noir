@@ -18,7 +18,7 @@ export default function Header() {
             <a
               key={link.label}
               href={link.href}
-              className="text-xs font-medium tracking-[0.28em] transition-opacity hover:opacity-60"
+              className="text-xs font-medium tracking-tighter transition-opacity hover:opacity-60"
             >
               {link.label}
             </a>
@@ -27,7 +27,7 @@ export default function Header() {
 
         <a
           href="#contact"
-          className="border border-ink px-6 py-2.5 text-xs font-medium tracking-[0.28em] transition-colors hover:bg-ink hover:text-cream"
+          className="border border-ink px-6 py-2.5 text-xs font-medium tracking-tighter transition-colors hover:bg-ink hover:text-cream"
         >
           START A PROJECT
         </a>

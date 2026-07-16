@@ -15,7 +15,7 @@
         </p>
         <a
           href="#contact"
-          className="mt-10 inline-block border border-cream/70 px-6 py-3 text-xs tracking-[0.28em] transition-colors hover:bg-cream hover:text-coal"
+          className="mt-10 inline-block border border-cream/70 px-6 py-3 text-xs tracking-tighter transition-colors hover:bg-cream hover:text-coal"
         >
           LET&rsquo;S BUILD YOURS
         </a>
