@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 import laceys from "../assets/laceys.png";
 import mettali from "../assets/mettali.png";
 import sunbase from "../assets/sunbase.png";
 import maisonflorale from "../assets/maisonflorale.png";
+import vedicSaarCover from "../assets/vedicpage/image1.svg";
 
 const projects = [
   {
@@ -10,6 +12,7 @@ const projects = [
     services: "Brand Identity & Packaging",
     image: laceys,
     alt: "Lacey's coffee cup on an espresso machine",
+    href: "#work",
     // [textCol, imageCol] on a 4-column track
     layout: { text: 1, image: 2 },
   },
@@ -19,6 +22,7 @@ const projects = [
     services: "Brand Identity, Web Design & Print",
     image: mettali,
     alt: "Mettali brand and web design",
+    href: "#work",
     layout: { text: 3, image: 4 },
   },
   {
@@ -27,6 +31,7 @@ const projects = [
     services: "Brand Identity & Packaging",
     image: sunbase,
     alt: "Sunbase packaging and print materials",
+    href: "#work",
     layout: { text: 4, image: 3 },
   },
   {
@@ -35,37 +40,56 @@ const projects = [
     services: "Brand Identity & Packaging",
     image: maisonflorale,
     alt: "Maison Florale packaging with flowers",
+    href: "#work",
     layout: { text: 2, image: 1 },
+  },
+  {
+    code: "NS · VS · 05",
+    name: "Vedic Saar",
+    services: "Brand Identity, Web Design & Print",
+    image: vedicSaarCover,
+    alt: "Vedic Saar embossed brand cover with sun emblem",
+    href: "/work/vedic-saar",
+    layout: { text: 1, image: 2 },
   },
 ];
 
 function TextCell({ project }) {
+  const isRoute = project.href.startsWith("/");
+  const buttonClass =
+    "mt-8 inline-block border border-ink px-4 py-2 text-[11px] tracking-tighter transition-colors hover:bg-ink hover:text-cream";
+
   return (
     <div className="flex h-full flex-col justify-between p-5">
       <p className="text-xs tracking-tighter">{project.code}</p>
       <div>
         <h3 className="font-serif text-[32px]">{project.name}</h3>
         <p className="mt-1 text-[15px] text-ink/70">{project.services}</p>
-        <a
-          href="#work"
-          className="mt-8 inline-block border border-ink px-4 py-2 text-[11px] tracking-tighter transition-colors hover:bg-ink hover:text-cream"
-        >
-          SEE CASE STUDY
-        </a>
+        {isRoute ? (
+          <Link to={project.href} className={buttonClass}>
+            SEE CASE STUDY
+          </Link>
+        ) : (
+          <a href={project.href} className={buttonClass}>
+            SEE CASE STUDY
+          </a>
+        )}
       </div>
     </div>
   );
 }
 
-export default function SelectedWork() {
+export default function SelectedWork({ hideLabel = false }) {
   return (
     <section id="work" className="border-b border-ink/60">
-      <p className="border-b border-ink/60 py-3 text-center text-xs tracking-tighter">
-        SELECTED WORK
-      </p>
+      {!hideLabel && (
+        <p className="border-b border-ink/60 py-3 text-center text-xs tracking-tighter">
+          SELECTED WORK
+        </p>
+      )}
 
       <div className="hidden px-16 pb-5 md:block">
-        <div className="border border-t-0 border-ink/60">
+        <div className="mt-5 border border-ink/60">
           {projects.map((project) => (
             <div
               key={project.code}

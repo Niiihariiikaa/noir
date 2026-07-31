@@ -1,28 +1,27 @@
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
-import Hero from "./components/Hero.jsx";
-import Marquee from "./components/Marquee.jsx";
-import Manifesto from "./components/Manifesto.jsx";
-import SelectedWork from "./components/SelectedWork.jsx";
-import DarkCta from "./components/DarkCta.jsx";
-import Services from "./components/Services.jsx";
-import Testimonial from "./components/Testimonial.jsx";
-import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Work from "./pages/Work.jsx";
+import VedicSaar from "./pages/VedicSaar.jsx";
+import Contact from "./pages/Contact.jsx";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-cream text-ink">
+      <ScrollToTop />
       <div className="h-7 bg-stone" />
       <Header />
       <main>
-        <Hero />
-        <Marquee />
-        <Manifesto />
-        <SelectedWork />
-        <DarkCta />
-        <Services />
-        <Testimonial />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/work/vedic-saar" element={<VedicSaar />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </main>
       <Footer />
     </div>

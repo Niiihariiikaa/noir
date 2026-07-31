@@ -1,15 +1,23 @@
-﻿import instaLogo from "../assets/logos/insta logo.png";
+﻿import { Link } from "react-router-dom";
+import instaLogo from "../assets/logos/insta logo.png";
 import pinterestLogo from "../assets/logos/pinterest logo.png";
 import behanceLogo from "../assets/logos/behance logo.png";
 
 const columns = [
   {
     heading: "Studio",
-    links: ["Work", "About us", "Services"],
+    links: [
+      { label: "Work", href: "/work" },
+      { label: "About us", href: "/about" },
+      { label: "Services", href: "/" },
+    ],
   },
   {
     heading: "Info",
-    links: ["FAQs", "Start a Project"],
+    links: [
+      { label: "FAQs", href: "/" },
+      { label: "Start a Project", href: "/contact" },
+    ],
   },
 ];
 
@@ -24,7 +32,9 @@ export default function Footer() {
     <footer className="bg-cream text-ink">
       <div className="mx-auto flex max-w-378 flex-col justify-between gap-12 px-6 pb-12 pt-12 md:flex-row md:px-12">
         <div>
-          <p className="font-logo text-[32px] leading-none">NOiR</p>
+          <Link to="/" className="font-logo text-[32px] leading-none">
+            NOiR
+          </Link>
           <div className="mt-5 flex gap-2">
             {socials.map((social) => (
               <a
@@ -44,16 +54,27 @@ export default function Footer() {
             <div key={column.heading}>
               <p className="font-serif text-xl italic">{column.heading}</p>
               <ul className="mt-5 space-y-3">
-                {column.links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#home"
-                      className="text-xs tracking-tighter text-ink/75 underline underline-offset-4 transition-colors hover:text-ink"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
+                {column.links.map((link) =>
+                  link.href.startsWith("/#") ? (
+                    <li key={link.label}>
+                      <a
+                        href={link.href}
+                        className="text-xs tracking-tighter text-ink/75 underline underline-offset-4 transition-colors hover:text-ink"
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  ) : (
+                    <li key={link.label}>
+                      <Link
+                        to={link.href}
+                        className="text-xs tracking-tighter text-ink/75 underline underline-offset-4 transition-colors hover:text-ink"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
           ))}
@@ -62,10 +83,10 @@ export default function Footer() {
 
       <div className="flex items-center justify-center gap-8 border-t border-ink/40 py-4 text-[11px] tracking-tighter text-ink/70">
         <p>&copy; NOIR 2026</p>
-        <a href="#home" className="transition-colors hover:text-ink">
+        <a href="/#home" className="transition-colors hover:text-ink">
           TERMS
         </a>
-        <a href="#home" className="transition-colors hover:text-ink">
+        <a href="/#home" className="transition-colors hover:text-ink">
           PRIVACY POLICY
         </a>
       </div>
