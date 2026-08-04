@@ -5,7 +5,7 @@ export default function Work() {
   return (
     <>
       <WorkHero />
-      <SelectedWork hideLabel />
+      <SelectedWork />
     </>
   );
 }

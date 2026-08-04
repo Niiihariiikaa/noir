@@ -1,47 +1,51 @@
-import cover from "../assets/vedicpage/image1.svg";
-import deliverablesMockup from "../assets/vedicpage/image2.png";
-import shellFeeling from "../assets/vedicpage/image3.svg";
-import logoLockup from "../assets/vedicpage/image4.svg";
-import starsFeeling from "../assets/vedicpage/image5.svg";
-import printKit from "../assets/vedicpage/image6.svg";
-import printTablet from "../assets/vedicpage/image7.svg";
-import printBooklet from "../assets/vedicpage/image8.svg";
-import typographyPrimary from "../assets/vedicpage/typography1.svg";
-import typographySecondary from "../assets/vedicpage/typography2.svg";
-import typographyAccent from "../assets/vedicpage/typography3.svg";
+import cover from "../assets/laceys/laceys1.svg";
+import deliverablesMockup from "../assets/laceys/laceys2.svg";
+import mugFeeling from "../assets/laceys/7.png";
+import capFeeling from "../assets/laceys/3.png";
+import flatlayFeeling from "../assets/laceys/6.png";
+import cupsCollateral from "../assets/laceys/4.png";
+import signageCollateral from "../assets/laceys/5.png";
+import bagCollateral from "../assets/laceys/8.png";
 
 const chapters = [
   { label: "BRAND STRATEGY", href: "#brand-strategy" },
   { label: "VISUAL IDENTITY", href: "#visual-identity" },
-  { label: "DISCOVERIES", href: "#discoveries" },
+  { label: "SOCIAL DIRECTION", href: "#social-direction" },
 ];
 
 const deliverableRows = [
   ["Logo Suite", "Color Palette"],
-  ["Brand Guidelines", "Custom Website"],
-  ["Stationery", "Print Collateral"],
+  ["Brand Guidelines", "Typography"],
+  ["Social Templates", "Content Direction"],
+  ["Reels Direction"],
 ];
 
 const swatches = [
-  { name: "Midnight Earth", hex: "#422F2B" },
-  { name: "Burnt Sienna", hex: "#9C7F65" },
-  { name: "Sandstone", hex: "#D3C3A7" },
-  { name: "Parchment", hex: "#F9F3EC" },
+  { name: "Dusty Rose", hex: "#B98289" },
+  { name: "Warm Linen", hex: "#E4D4C0" },
+  { name: "Espresso", hex: "#3B2A25" },
+  { name: "Blush Cream", hex: "#F1E1DA" },
+  { name: "Ivory", hex: "#FAF6EE" },
 ];
 
 const feelingImages = [
-  { src: shellFeeling, alt: "Oyster shell with a pearl — clarity was always inside" },
-  { src: logoLockup, alt: "Vedic Saar sun emblem logo lockup on textured parchment" },
-  { src: starsFeeling, alt: "Ethereal flower petals in dark light — written in the stars" },
+  { src: mugFeeling, alt: "Hand holding a Lacey's mug reading 'Where every sip feels like home'" },
+  { src: capFeeling, alt: "Cream cap embroidered with the lacey's script logo" },
+  { src: flatlayFeeling, alt: "Iced coffee flatlay styled with Lacey's Bakehouse & Brew signage" },
 ];
 
-const printImages = [
-  { src: printKit, alt: "Boxed Vedic Saar brand kit with an astrology chart cover" },
-  { src: printTablet, alt: "Tablet showing the Vedic Saar Decode Your Destiny web page" },
-  { src: printBooklet, alt: "Open printed booklet with Maanish Malhotra's bio" },
+const collateralImages = [
+  { src: cupsCollateral, alt: "Three branded Lacey's coffee cups on a café table" },
+  { src: signageCollateral, alt: "Wooden sandwich board reading 'Say hi to your new favorite coffee, lacey's'" },
+  { src: bagCollateral, alt: "Lacey's Bakehouse and Brew whole bean coffee bag packaging" },
 ];
 
-export default function VedicSaar() {
+const results = [
+  { stat: "Social engagement", note: "post-launch" },
+  { stat: "Footfall / walk-in bookings", note: "" },
+];
+
+export default function Laceys() {
   return (
     <>
       {/* Hero split */}
@@ -50,30 +54,27 @@ export default function VedicSaar() {
           <div className="flex items-center justify-center p-10 md:border-r md:border-ink/60 md:p-12">
             <img
               src={cover}
-              alt="Embossed Vedic Saar brand cover with gold sun emblem"
+              alt="Espresso pouring into a maroon Lacey's cup reading 'Where every sip feels like home'"
               className="h-full max-h-125 w-full max-w-125 object-cover"
             />
           </div>
 
           <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
             <p className="text-xs tracking-tighter">THE CLIENT</p>
-            <h1 className="mt-6 font-serif text-3xl md:text-4xl">
-              VEDIC SAAR by Manish Malhotra
-            </h1>
+            <h1 className="mt-6 font-serif text-3xl md:text-4xl">LACEYS</h1>
             <p className="mt-8 max-w-md text-justify text-sm leading-relaxed text-ink/75">
-              Vedic Saar is a holistic wellness and spiritual guidance brand
-              offering astrology, numerology, and Vastu consultations &mdash;
-              making ancient Vedic wisdom feel modern, approachable, and
-              genuinely trustworthy. The brand exists to simplify accurate
-              predictions, practical remedies, and personalised guidance that
-              helps people find clarity and balance in their everyday lives.
+              Laceys is an artisan caf&eacute; and bakehouse brand built
+              around the idea that every visit should feel like a pause
+              &mdash; warm, considered, and worth coming back for. The brief
+              was to build an identity that felt as handcrafted as the food
+              it represented, and a digital presence that made someone want
+              to walk in before they&rsquo;d even looked at the menu.
             </p>
             <p className="mt-4 max-w-md text-justify text-sm leading-relaxed text-ink/75">
-              Noir was brought in to build the complete brand identity,
-              website, and print collateral from the ground up. The goal: a
-              visual language rooted in Vedic heritage that also reads as
-              premium and credible to a modern audience discovering spiritual
-              guidance for the first time.
+              Noir built the complete brand identity and social direction
+              from the ground up &mdash; logo suite, color system,
+              typography, and a content framework the team could run with
+              consistently week to week.
             </p>
           </div>
         </div>
@@ -83,9 +84,8 @@ export default function VedicSaar() {
       <section className="border-b border-ink/60">
         <div className="mx-auto max-w-3xl px-6 py-24 text-center">
           <p className="font-serif text-2xl leading-relaxed md:text-[28px]">
-            Ancient wisdom doesn&rsquo;t sell itself &mdash; not because it
-            lacks value, but because it&rsquo;s rarely been given a visual
-            language worthy of it. That was the brief.
+            A caf&eacute; brand should make someone feel welcome before
+            they&rsquo;ve walked through the door. That was the brief.
           </p>
         </div>
       </section>
@@ -108,20 +108,20 @@ export default function VedicSaar() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex flex-col justify-center px-8 py-16 md:border-r md:border-ink/60 md:px-16 md:py-20">
             <h2 className="font-serif text-3xl italic md:text-4xl">
-              Rooted in Tradition
+              Made With Care.
             </h2>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-ink/70">
-              Ancient wisdom doesn&rsquo;t sell itself &mdash; not because it
-              lacks value, but because it&rsquo;s rarely been given a visual
-              language worthy of it. That was the brief.
+              Every detail of the Laceys identity was built to feel handmade
+              without looking homemade &mdash; warm enough to feel personal,
+              considered enough to feel premium.
             </p>
           </div>
 
           <div className="flex items-center px-8 py-16 md:px-16 md:py-20">
             <p className="text-center text-sm uppercase leading-relaxed tracking-tighter text-ink/80 md:text-base">
-              Vedic Saar&rsquo;s identity is warm, rooted, and unmistakably
-              premium &mdash; built to make ancient wisdom feel as relevant
-              today as it has always been.
+              Laceys&rsquo; identity is warm, inviting, and unmistakably
+              crafted &mdash; built to make every visit feel like it was made
+              for you.
             </p>
           </div>
         </div>
@@ -133,11 +133,10 @@ export default function VedicSaar() {
           <div className="flex flex-col justify-center px-8 py-16 md:px-16 md:py-20">
             <p className="text-xs tracking-tighter">DELIVERABLES</p>
             <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:ml-auto md:max-w-xs md:text-right">
-              From the ground up &mdash; a complete brand identity, a full
-              custom website, and a print system that carries the same
-              visual language offline. Every deliverable built as one
-              connected system, not three separate projects handed off in
-              isolation.
+              From the ground up &mdash; a complete brand identity and
+              social content system that carries the same warmth offline
+              and online. Every deliverable built as one connected
+              experience, not separate projects handed off in isolation.
             </p>
 
             <div className="mt-10 flex max-w-xs flex-col gap-2 md:ml-auto">
@@ -159,7 +158,7 @@ export default function VedicSaar() {
           <div className="flex items-center justify-center bg-coal p-10 md:border-l md:border-ink/60 md:p-14">
             <img
               src={deliverablesMockup}
-              alt="Laptop showing the Vedic Saar Numbers & Love numerology page, resting on a stone plinth"
+              alt="Lacey's storefront signage lit up with the script logo above the counter"
               className="h-full max-h-125 w-auto object-contain"
             />
           </div>
@@ -188,11 +187,11 @@ export default function VedicSaar() {
       </section>
 
       {/* Brand Colors + Typography */}
-      <section id="discoveries" className="border-b border-ink/60">
+      <section id="social-direction" className="border-b border-ink/60">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="px-8 py-16 md:border-r md:border-ink/60 md:px-16 md:py-20">
             <p className="text-xs tracking-tighter">BRAND COLORS</p>
-            <div className="mt-6 grid grid-cols-4 gap-3">
+            <div className="mt-6 grid grid-cols-5 gap-3">
               {swatches.map((swatch) => (
                 <div key={swatch.hex}>
                   <div
@@ -206,39 +205,19 @@ export default function VedicSaar() {
             </div>
           </div>
 
-          <div className="px-8 py-16 md:px-16 md:py-20">
+          <div className="flex flex-col justify-center px-8 py-16 md:px-16 md:py-20">
             <p className="text-xs tracking-tighter">TYPOGRAPHY</p>
-
-            <p className="mt-8 text-xs tracking-tighter text-ink/50">PRIMARY</p>
-            <img
-              src={typographyPrimary}
-              alt="Where Ancient Wisdom Meets Modern Life."
-              className="mt-3 h-auto w-full max-w-75"
-            />
-
-            <p className="mt-8 text-xs tracking-tighter text-ink/50">
-              SECONDARY
+            <p className="mt-6 font-script text-4xl leading-relaxed text-ink md:text-5xl">
+              Where Every Sip Feels Like Home.
             </p>
-            <img
-              src={typographySecondary}
-              alt="Astrology. Numerology. Vastu. Guidance that stays long after the session ends."
-              className="mt-3 h-auto w-full max-w-80"
-            />
-
-            <p className="mt-8 text-xs tracking-tighter text-ink/50">ACCENT</p>
-            <img
-              src={typographyAccent}
-              alt="Clarity was always inside."
-              className="mt-3 h-auto w-full max-w-65"
-            />
           </div>
         </div>
       </section>
 
-      {/* Print mockups */}
+      {/* Collateral mockups */}
       <section className="border-b border-ink/60">
         <div className="grid grid-cols-1 md:grid-cols-3 md:divide-x md:divide-ink/60">
-          {printImages.map((img) => (
+          {collateralImages.map((img) => (
             <div
               key={img.src}
               className="border-b border-ink/60 p-6 last:border-b-0 md:border-b-0 md:p-8"
@@ -252,6 +231,9 @@ export default function VedicSaar() {
           ))}
         </div>
       </section>
+
+      
+     
     </>
   );
 }

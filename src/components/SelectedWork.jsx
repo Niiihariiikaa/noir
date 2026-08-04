@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import laceys from "../assets/laceys.png";
+import laceys from "../assets/laceys/laceys1.svg";
 import mettali from "../assets/mettali.png";
 import sunbase from "../assets/sunbase.png";
 import maisonflorale from "../assets/maisonflorale.png";
@@ -12,7 +12,7 @@ const projects = [
     services: "Brand Identity & Packaging",
     image: laceys,
     alt: "Lacey's coffee cup on an espresso machine",
-    href: "#work",
+    href: "/work/laceys",
     // [textCol, imageCol] on a 4-column track
     layout: { text: 1, image: 2 },
   },
@@ -89,7 +89,7 @@ export default function SelectedWork({ hideLabel = false }) {
       )}
 
       <div className="hidden px-16 pb-5 md:block">
-        <div className="mt-5 border border-ink/60">
+        <div className="border border-ink/60">
           {projects.map((project) => (
             <div
               key={project.code}
