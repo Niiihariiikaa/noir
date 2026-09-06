@@ -1,0 +1,57 @@
+[9232:31172:0906/004136.260:ERROR:components\viz\host\persistent_cache_sandboxed_file_factory.cc:84] Failed to create cache directory: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\GPUPersistentCache: There is not enough space on the disk. (0x70)
+[9232:31172:0906/004136.270:ERROR:components\viz\host\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory "C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\GPUPersistentCache\DawnGraphiteCache\LM4HLUYPEPEQCVCS7WUD63O7S5RDUCDG", error: 2: There is not enough space on the disk. (0x70)
+[9232:31172:0906/004136.285:ERROR:components\segmentation_platform\internal\database\ukm_database_backend.cc:142] Failed to open UKM database: -8 sql::Database is not opened.
+[9232:27844:0906/004136.329:ERROR:net\disk_cache\simple\simple_backend_impl.cc:81] Failed to create directory: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Code Cache\js
+[9232:2016:0906/004136.329:ERROR:net\disk_cache\simple\simple_backend_impl.cc:81] Failed to create directory: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Code Cache\wasm
+[9232:14924:0906/004136.338:ERROR:components\password_manager\core\browser\password_store\login_database.cc:1094] Unable to open the password store database.
+[9232:14924:0906/004136.338:ERROR:components\password_manager\core\browser\password_store\login_database_async_helper.cc:77] Could not create/open login database.
+[9232:27844:0906/004136.339:ERROR:net\disk_cache\simple\simple_backend_impl.cc:81] Failed to create directory: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Code Cache\js
+[9232:27844:0906/004136.339:ERROR:net\disk_cache\simple\simple_backend_impl.cc:749] Simple Cache Backend: wrong file structure on disk: 1 path: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Code Cache\js
+[9232:2016:0906/004136.339:ERROR:net\disk_cache\simple\simple_backend_impl.cc:81] Failed to create directory: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Code Cache\wasm
+[9232:2016:0906/004136.339:ERROR:net\disk_cache\simple\simple_backend_impl.cc:749] Simple Cache Backend: wrong file structure on disk: 1 path: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Code Cache\wasm
+[9232:2016:0906/004136.339:ERROR:net\disk_cache\cache_util_win.cc:25] Unable to move the cache: The system cannot find the path specified. (0x3)
+[9232:31172:0906/004136.339:ERROR:net\disk_cache\cache_util_win.cc:25] Unable to move the cache: The system cannot find the path specified. (0x3)
+[9232:12660:0906/004136.342:ERROR:net\disk_cache\disk_cache.cc:290] Unable to create cache
+[9232:12660:0906/004136.342:ERROR:net\disk_cache\disk_cache.cc:290] Unable to create cache
+[9232:38876:0906/004136.342:ERROR:components\password_manager\core\browser\password_store\login_database.cc:1094] Unable to open the password store database.
+[9232:38876:0906/004136.342:ERROR:components\password_manager\core\browser\password_store\login_database_async_helper.cc:77] Could not create/open login database.
+[9232:8804:0906/004136.342:ERROR:content\browser\network_sandbox.cc:495] Failed to create network context data directory C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Network: There is not enough space on the disk. (0x70)
+[9232:9756:0906/004136.492:ERROR:net\disk_cache\cache_util_win.cc:25] Unable to move the cache: The system cannot find the file specified. (0x2)
+[9232:15572:0906/004136.500:ERROR:content\browser\network_sandbox.cc:495] Failed to create network context data directory C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Safe Browsing Network: There is not enough space on the disk. (0x70)
+[9232:22596:0906/004136.500:ERROR:content\browser\network_sandbox_grant_result_helper.cc:106] Encountered error while migrating network context data or granting sandbox access for C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Network. Result: 2: The operation completed successfully. (0x0)
+[9232:35076:0906/004136.517:ERROR:storage\browser\quota\quota_database.cc:988] Could not open the quota database, resetting.
+[9232:35076:0906/004136.517:ERROR:storage\browser\quota\quota_database.cc:988] Could not open the quota database, resetting.
+[9232:35076:0906/004136.517:ERROR:storage\browser\quota\quota_database.cc:993] Failed to reset the quota database.
+[9232:35076:0906/004136.517:ERROR:storage\browser\quota\quota_database.cc:993] Failed to reset the quota database.
+[9232:22596:0906/004136.533:ERROR:net\disk_cache\disk_cache.cc:290] Unable to create cache
+[9232:22596:0906/004136.533:ERROR:gpu\ipc\host\gpu_disk_cache.cc:737] Gpu Cache Creation failed: -2
+[9232:22596:0906/004136.538:ERROR:content\browser\network_sandbox_grant_result_helper.cc:106] Encountered error while migrating network context data or granting sandbox access for C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Safe Browsing Network. Result: 2: The operation completed successfully. (0x0)
+[9232:36524:0906/004136.541:ERROR:components\history\core\browser\top_sites_backend.cc:77] Failed to initialize database.
+[9232:9756:0906/004136.566:ERROR:net\disk_cache\cache_util_win.cc:25] Unable to move the cache: The system cannot find the file specified. (0x2)
+[9232:9756:0906/004136.566:ERROR:net\disk_cache\cache_util_win.cc:25] Unable to move the cache: The system cannot find the file specified. (0x2)
+[9232:9756:0906/004136.566:ERROR:net\disk_cache\cache_util_win.cc:25] Unable to move the cache: The system cannot find the file specified. (0x2)
+[9232:15572:0906/004136.575:ERROR:net\disk_cache\cache_util_win.cc:25] Unable to move the cache: The system cannot find the file specified. (0x2)
+[9232:22596:0906/004136.583:ERROR:net\disk_cache\disk_cache.cc:290] Unable to create cache
+[9232:22596:0906/004136.583:ERROR:gpu\ipc\host\gpu_disk_cache.cc:737] Gpu Cache Creation failed: -2
+[9232:22596:0906/004136.584:ERROR:net\disk_cache\disk_cache.cc:290] Unable to create cache
+[9232:22596:0906/004136.584:ERROR:gpu\ipc\host\gpu_disk_cache.cc:737] Gpu Cache Creation failed: -2
+[9232:22596:0906/004136.589:ERROR:net\disk_cache\disk_cache.cc:290] Unable to create cache
+[9232:22596:0906/004136.589:ERROR:gpu\ipc\host\gpu_disk_cache.cc:737] Gpu Cache Creation failed: -2
+[9232:22596:0906/004136.601:ERROR:net\disk_cache\disk_cache.cc:290] Unable to create cache
+[9232:22596:0906/004136.601:ERROR:gpu\ipc\host\gpu_disk_cache.cc:737] Gpu Cache Creation failed: -2
+[9232:9756:0906/004138.746:ERROR:chrome\browser\web_applications\web_app_icon_manager.cc:123] Could not create directory: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Web Applications\Temp
+[9232:22596:0906/004138.746:ERROR:chrome\browser\web_applications\externally_managed_app_manager.cc:680] https://mail.google.com/mail/installwebapp?usp=chrome_default from install source 1 failed to install with reason 6
+[9232:9756:0906/004138.779:ERROR:chrome\browser\web_applications\web_app_icon_manager.cc:123] Could not create directory: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Web Applications\Temp
+[9232:22596:0906/004138.779:ERROR:chrome\browser\web_applications\externally_managed_app_manager.cc:680] https://docs.google.com/document/installwebapp?usp=chrome_default from install source 1 failed to install with reason 6
+[9232:9756:0906/004138.855:ERROR:chrome\browser\web_applications\web_app_icon_manager.cc:123] Could not create directory: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Web Applications\Temp
+[9232:22596:0906/004138.855:ERROR:chrome\browser\web_applications\externally_managed_app_manager.cc:680] https://drive.google.com/drive/installwebapp?usp=chrome_default from install source 1 failed to install with reason 6
+[9232:6532:0906/004138.892:ERROR:chrome\browser\web_applications\web_app_icon_manager.cc:123] Could not create directory: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Web Applications\Temp
+[9232:22596:0906/004138.893:ERROR:chrome\browser\web_applications\externally_managed_app_manager.cc:680] https://docs.google.com/spreadsheets/installwebapp?usp=chrome_default from install source 1 failed to install with reason 6
+[9232:9756:0906/004138.966:ERROR:chrome\browser\web_applications\web_app_icon_manager.cc:123] Could not create directory: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Web Applications\Temp
+[9232:22596:0906/004138.966:ERROR:chrome\browser\web_applications\externally_managed_app_manager.cc:680] https://docs.google.com/presentation/installwebapp?usp=chrome_default from install source 1 failed to install with reason 6
+[9232:9756:0906/004139.006:ERROR:chrome\browser\web_applications\web_app_icon_manager.cc:123] Could not create directory: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Web Applications\Temp
+[9232:22596:0906/004139.006:ERROR:chrome\browser\web_applications\externally_managed_app_manager.cc:680] https://www.youtube.com/s/notifications/manifest/cr_install.html from install source 1 failed to install with reason 6
+[9232:9756:0906/004139.073:ERROR:chrome\browser\web_applications\web_app_icon_manager.cc:123] Could not create directory: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\Web Applications\Temp
+[9232:22596:0906/004139.073:ERROR:chrome\browser\web_applications\externally_managed_app_manager.cc:680] https://chat.google.com/download?usp=chrome_default from install source 1 failed to install with reason 6
+2013032 bytes written to file E:\noir_scratch\mettali1.png
+[9232:4232:0906/004147.827:ERROR:google_apis\gcm\engine\gcm_store_impl.cc:321] Failed to open database C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\GCM Store: IO error: C:\Users\NIHARI~1\AppData\Local\Temp\HeadlessChrome92322626650015\Default\GCM Store/LOCK: File not found. (ChromeMethodBFE: 15::LockFile::4)

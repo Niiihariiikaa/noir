@@ -33,10 +33,13 @@ const initialForm = {
   requirements: "",
 };
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mdeolglz";
+
 export default function Contact() {
   const [requestType, setRequestType] = useState("new");
   const [selectedNeeds, setSelectedNeeds] = useState([]);
   const [form, setForm] = useState(initialForm);
+  const [status, setStatus] = useState("idle");
 
   const toggleNeed = (need) => {
     setSelectedNeeds((prev) =>
@@ -48,30 +51,34 @@ export default function Contact() {
     setForm((prev) => ({ ...prev, [field]: event.target.value }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    setStatus("submitting");
 
     const typeLabel = requestTypes.find((t) => t.id === requestType)?.title ?? "";
-    const bodyLines = [
-      `Request type: ${typeLabel}`,
-      `Name: ${form.fullName}`,
-      `Email: ${form.email}`,
-      form.phone && `Phone: ${form.phone}`,
-      form.company && `Company: ${form.company}`,
-      form.projectName && `Project / brand name: ${form.projectName}`,
-      form.projectLink && `Link: ${form.projectLink}`,
-      selectedNeeds.length && `What's needed: ${selectedNeeds.join(", ")}`,
-      "",
-      "Requirements:",
-      form.requirements,
-    ].filter(Boolean);
 
-    const subject = encodeURIComponent(
-      `${typeLabel}${form.projectName ? ` — ${form.projectName}` : ""}`
-    );
-    const body = encodeURIComponent(bodyLines.join("\n"));
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          requestType: typeLabel,
+          ...form,
+          needs: selectedNeeds.join(", "),
+        }),
+      });
 
-    window.location.href = `mailto:hello@noirstudio.design?subject=${subject}&body=${body}`;
+      if (response.ok) {
+        setStatus("success");
+        setForm(initialForm);
+        setSelectedNeeds([]);
+        setRequestType("new");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -240,10 +247,26 @@ export default function Contact() {
 
         <button
           type="submit"
-          className="mt-14 w-full border border-ink bg-ink py-4 text-xs tracking-tighter text-cream transition-colors hover:bg-transparent hover:text-ink"
+          disabled={status === "submitting"}
+          className="mt-14 w-full border border-ink bg-ink py-4 text-xs tracking-tighter text-cream transition-colors hover:bg-transparent hover:text-ink disabled:opacity-50"
         >
-          SUBMIT REQUEST &rarr;
+          {status === "submitting" ? "SENDING…" : "SUBMIT REQUEST →"}
         </button>
+
+        {status === "success" && (
+          <p className="mt-6 text-center text-sm text-ink/70">
+            Thanks — your request has been sent. We&rsquo;ll reply within a couple of days.
+          </p>
+        )}
+        {status === "error" && (
+          <p className="mt-6 text-center text-sm text-red-700">
+            Something went wrong sending that. Please try again, or email us directly at{" "}
+            <a href="mailto:niharikaakashyap@gmail.com" className="underline">
+              niharikaakashyap@gmail.com
+            </a>
+            .
+          </p>
+        )}
       </form>
     </section>
   );

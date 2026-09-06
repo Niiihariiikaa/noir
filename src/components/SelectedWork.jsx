@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import laceys from "../assets/laceys/laceys1.svg";
+import laceys from "../assets/laceys/1.png";
 import mettali from "../assets/mettali.png";
-import sunbase from "../assets/sunbase.png";
 import maisonflorale from "../assets/maisonflorale.png";
 import vedicSaarCover from "../assets/vedicpage/image1.svg";
 
@@ -22,29 +21,20 @@ const projects = [
     services: "Brand Identity, Web Design & Print",
     image: mettali,
     alt: "Mettali brand and web design",
-    href: "#work",
+    href: "/work/mettali",
     layout: { text: 3, image: 4 },
   },
   {
-    code: "NS · SB · 03",
-    name: "Sunbase",
-    services: "Brand Identity & Packaging",
-    image: sunbase,
-    alt: "Sunbase packaging and print materials",
-    href: "#work",
-    layout: { text: 4, image: 3 },
-  },
-  {
-    code: "NS · MF · 04",
+    code: "NS · MF · 03",
     name: "Maison Florale",
     services: "Brand Identity & Packaging",
     image: maisonflorale,
     alt: "Maison Florale packaging with flowers",
-    href: "#work",
+    href: "/work/maison-florale",
     layout: { text: 2, image: 1 },
   },
   {
-    code: "NS · VS · 05",
+    code: "NS · VS · 04",
     name: "Vedic Saar",
     services: "Brand Identity, Web Design & Print",
     image: vedicSaarCover,
@@ -89,7 +79,7 @@ export default function SelectedWork({ hideLabel = false }) {
       )}
 
       <div className="hidden px-16 pb-5 md:block">
-        <div className="border border-ink/60">
+        <div className="border-x border-b border-ink/60">
           {projects.map((project) => (
             <div
               key={project.code}

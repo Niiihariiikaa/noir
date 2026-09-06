@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import letsconnect from "../assets/letsconnect.png";
 
 export default function Contact() {
@@ -28,12 +29,12 @@ export default function Contact() {
             If it sounds like a fit, we&rsquo;ll set up a quick call to talk it
             through properly.
           </p>
-          <a
-            href="mailto:hello@noirstudio.design"
+          <Link
+            to="/contact"
             className="mt-10 inline-block self-start border border-ink px-6 py-3 text-xs tracking-tighter transition-colors hover:bg-ink hover:text-cream"
           >
             WORK WITH US
-          </a>
+          </Link>
         </div>
       </div>
     </section>
