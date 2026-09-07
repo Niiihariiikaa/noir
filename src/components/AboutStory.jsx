@@ -15,7 +15,7 @@ export default function AboutStory() {
         <img
           src={storyImage}
           alt="Seen, Shaped, Remembered"
-          className="mx-auto mt-10 w-full max-w-md object-cover"
+          className="mx-auto mt-10 aspect-3/2 w-full max-w-md object-cover"
         />
 
         <p className="mx-auto mt-8 max-w-xl text-justify text-sm leading-relaxed text-ink/70">

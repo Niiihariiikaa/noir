@@ -4,11 +4,11 @@ export default function AboutIntro() {
   return (
     <section className="border-b border-ink/60">
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="flex items-center justify-center p-10 md:border-r md:border-ink/60 md:p-12">
+        <div className="flex items-center justify-center p-10 md:p-14">
           <img
             src={studioPhoto}
             alt="Overhead shot of hands typing on a laptop beside a notebook and candle"
-            className="h-full max-h-125 w-full max-w-125 object-cover"
+            className="w-full h-auto"
           />
         </div>
 

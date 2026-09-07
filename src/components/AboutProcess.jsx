@@ -52,7 +52,7 @@ export default function AboutProcess() {
                 key={step.label}
                 className="group border-t border-ink/30 py-3 last:border-b"
               >
-                <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-medium tracking-tighter uppercase marker:content-none [&::-webkit-details-marker]:hidden">
+                <summary className="flex cursor-pointer list-none items-center justify-between font-serif text-base tracking-tighter uppercase marker:content-none [&::-webkit-details-marker]:hidden">
                   {step.label}
                   <span className="text-lg leading-none text-ink/40 transition-transform duration-300 group-open:rotate-45">
                     +

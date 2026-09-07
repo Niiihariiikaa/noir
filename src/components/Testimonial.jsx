@@ -9,7 +9,7 @@ const testimonials = [
   {
     quote:
       "They asked harder questions about our business than our own investors did — and the site that came out the other side finally says what we could never quite put into words.",
-    author: "Marc Delacroix",
+    author: "Rohan Malhotra",
   },
   {
     quote:
@@ -19,18 +19,22 @@ const testimonials = [
   {
     quote:
       "The catalogue they designed did more for our wholesale accounts than two trade shows. Buyers kept asking who did it — that's when we knew the rebrand had paid for itself.",
-    author: "Daniel Mercer",
+    author: "Arjun Mehta",
   },
   {
     quote:
       "We came in asking for a website and left with a brand that finally holds together everywhere — the site, the packaging, even how we write our emails. Nothing has felt improvised since.",
-    author: "Camille Roy",
+    author: "Priya Nair",
   },
 ];
 
 export default function Testimonial() {
   const [active, setActive] = useState(0);
   const current = testimonials[active];
+
+  const goPrev = () =>
+    setActive((i) => (i - 1 + testimonials.length) % testimonials.length);
+  const goNext = () => setActive((i) => (i + 1) % testimonials.length);
 
   return (
     <section className="border-b border-ink/60">
@@ -40,18 +44,38 @@ export default function Testimonial() {
         </blockquote>
         <p className="mt-8 font-script text-3xl">~ {current.author}</p>
 
-        <div className="mt-10 flex justify-center gap-3">
-          {testimonials.map((t, i) => (
-            <button
-              key={t.author}
-              type="button"
-              onClick={() => setActive(i)}
-              aria-label={`Show testimonial ${i + 1}`}
-              className={`h-2 w-2 rounded-full border border-ink transition-colors ${
-                i === active ? "bg-ink" : "bg-transparent"
-              }`}
-            />
-          ))}
+        <div className="mt-10 flex items-center justify-center gap-6">
+          <button
+            type="button"
+            onClick={goPrev}
+            aria-label="Previous testimonial"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-ink/40 transition-colors hover:border-ink"
+          >
+            &larr;
+          </button>
+
+          <div className="flex gap-3">
+            {testimonials.map((t, i) => (
+              <button
+                key={t.author}
+                type="button"
+                onClick={() => setActive(i)}
+                aria-label={`Show testimonial ${i + 1}`}
+                className={`h-2 w-2 rounded-full border border-ink transition-colors ${
+                  i === active ? "bg-ink" : "bg-transparent"
+                }`}
+              />
+            ))}
+          </div>
+
+          <button
+            type="button"
+            onClick={goNext}
+            aria-label="Next testimonial"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-ink/40 transition-colors hover:border-ink"
+          >
+            &rarr;
+          </button>
         </div>
       </div>
     </section>

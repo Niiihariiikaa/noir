@@ -44,13 +44,13 @@ export default function Maison() {
   return (
     <>
       {/* Hero split */}
-      <section className="border-b border-ink/60">
+      <section className="border-b border-hairline">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="flex items-center justify-center p-10 md:border-r md:border-ink/60 md:p-12">
+          <div className="flex items-center justify-center p-10 md:border-r md:border-hairline md:p-14">
             <img
               src={cover}
               alt="Embossed MAISON FLORALE brand cover over a dried flower photograph"
-              className="h-full max-h-125 w-full max-w-125 object-cover"
+              className="w-full h-auto"
             />
           </div>
 
@@ -76,7 +76,7 @@ export default function Maison() {
       </section>
 
       {/* Pull-quote */}
-      <section className="border-b border-ink/60">
+      <section className="border-b border-hairline">
         <div className="mx-auto max-w-3xl px-6 py-24 text-center">
           <p className="font-serif text-2xl leading-relaxed md:text-[28px]">
             Flowers are not decoration. The brand had to say that before
@@ -86,22 +86,25 @@ export default function Maison() {
       </section>
 
       {/* Chapter row */}
-      <nav className="grid grid-cols-1 border-b border-ink/60 md:grid-cols-3 md:divide-x md:divide-ink/60">
+      <nav className="grid grid-cols-1 border-b border-hairline md:grid-cols-3 md:divide-x md:divide-hairline">
         {chapters.map((chapter) => (
           <a
             key={chapter.label}
             href={chapter.href}
-            className="border-b border-ink/60 py-3 text-center text-xs tracking-tighter transition-opacity last:border-b-0 hover:opacity-60 md:border-b-0"
+            className="border-b border-hairline py-3 text-center text-xs tracking-tighter transition-opacity last:border-b-0 hover:opacity-60 md:border-b-0"
           >
             {chapter.label}
           </a>
         ))}
       </nav>
 
-      {/* Strategy split */}
-      <section id="brand-strategy" className="border-b border-ink/60">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="flex flex-col justify-center px-8 py-16 md:border-r md:border-ink/60 md:px-16 md:py-20">
+      {/* Strategy + Deliverables — uniform 2x2 grid, equal cell dimensions */}
+      <section className="border-b border-hairline">
+        <div
+          id="brand-strategy"
+          className="grid grid-cols-1 border-b border-hairline md:grid-cols-2 md:min-h-150"
+        >
+          <div className="flex flex-col justify-center px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
             <h2 className="font-serif text-3xl italic md:text-4xl">
               L&rsquo;Art de la Fleur.
             </h2>
@@ -120,11 +123,11 @@ export default function Maison() {
             </p>
           </div>
         </div>
-      </section>
 
-      {/* Deliverables split */}
-      <section id="visual-identity" className="border-b border-ink/60">
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div
+          id="visual-identity"
+          className="grid grid-cols-1 md:grid-cols-2 md:min-h-150"
+        >
           <div className="flex flex-col justify-center px-8 py-16 md:px-16 md:py-20">
             <p className="text-xs tracking-tighter">DELIVERABLES</p>
             <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:ml-auto md:max-w-xs md:text-right">
@@ -134,13 +137,13 @@ export default function Maison() {
               it came from a different hand.
             </p>
 
-            <div className="mt-10 flex max-w-xs flex-col gap-2 md:ml-auto">
+            <div className="mt-10 flex max-w-xs flex-col gap-3 md:ml-auto">
               {deliverableRows.map((row) => (
-                <div key={row[0]} className="flex justify-end gap-2">
+                <div key={row[0]} className="flex justify-end gap-3">
                   {row.map((item) => (
                     <span
                       key={item}
-                      className="whitespace-nowrap bg-ink px-3 py-2 text-center text-[10px] uppercase tracking-tighter text-cream"
+                      className="whitespace-nowrap rounded-xs bg-[#161311] px-4.5 py-2.5 text-center text-[10px] uppercase tracking-[1.5px] text-white"
                     >
                       {item}
                     </span>
@@ -150,31 +153,31 @@ export default function Maison() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center bg-coal p-10 md:border-l md:border-ink/60 md:p-14">
+          <div className="relative min-h-80 md:min-h-0 md:border-l md:border-hairline">
             <img
               src={deliverablesMockup}
               alt="Maison Florale storefront window display with logo, taglines, and potted flowers"
-              className="h-full max-h-125 w-auto object-contain"
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
         </div>
       </section>
 
       {/* A Brand, In Feeling */}
-      <section className="border-b border-ink/60">
-        <p className="border-b border-ink/60 py-3 text-center text-xs tracking-tighter">
+      <section className="border-b border-hairline">
+        <p className="border-b border-hairline py-3 text-center text-xs tracking-tighter">
           A BRAND, IN FEELING
         </p>
-        <div className="grid grid-cols-1 border-b border-ink/60 md:grid-cols-3 md:divide-x md:divide-ink/60 md:border-b-0">
+        <div className="grid grid-cols-1 border-b border-hairline md:grid-cols-3 md:divide-x md:divide-hairline md:border-b-0">
           {feelingImages.map((img) => (
             <div
               key={img.src}
-              className="border-b border-ink/60 p-6 last:border-b-0 md:border-b-0 md:p-8"
+              className="border-b border-hairline p-6 last:border-b-0 md:border-b-0 md:p-8"
             >
               <img
                 src={img.src}
                 alt={img.alt}
-                className="aspect-4/5 w-full border border-ink/60 object-cover"
+                className="aspect-3/4 w-full border border-hairline object-cover"
               />
             </div>
           ))}
@@ -182,15 +185,15 @@ export default function Maison() {
       </section>
 
       {/* Brand Colors + Typography */}
-      <section className="border-b border-ink/60">
+      <section className="border-b border-hairline">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="px-8 py-16 md:border-r md:border-ink/60 md:px-16 md:py-20">
+          <div className="px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
             <p className="text-xs tracking-tighter">BRAND COLORS</p>
-            <div className="mt-6 grid grid-cols-4 gap-3">
+            <div className="mt-6 grid grid-cols-[repeat(4,143px)] gap-6">
               {swatches.map((swatch) => (
                 <div key={swatch.hex}>
                   <div
-                    className="aspect-1/2 w-full border border-ink/60"
+                    className="aspect-143/323 w-full border border-hairline"
                     style={{ backgroundColor: swatch.hex }}
                   />
                   <p className="mt-2 text-xs text-ink/80">{swatch.name}</p>
@@ -212,17 +215,17 @@ export default function Maison() {
       </section>
 
       {/* Print mockups */}
-      <section id="print" className="border-b border-ink/60">
-        <div className="grid grid-cols-1 md:grid-cols-3 md:divide-x md:divide-ink/60">
+      <section id="print" className="border-b border-hairline">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:divide-x md:divide-hairline">
           {printImages.map((img) => (
             <div
               key={img.src}
-              className="border-b border-ink/60 p-6 last:border-b-0 md:border-b-0 md:p-8"
+              className="border-b border-hairline p-6 last:border-b-0 md:border-b-0 md:p-8"
             >
               <img
                 src={img.src}
                 alt={img.alt}
-                className="aspect-4/5 w-full border border-ink/60 object-cover"
+                className="aspect-3/4 w-full border border-hairline object-cover"
               />
             </div>
           ))}

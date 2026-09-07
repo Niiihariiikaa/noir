@@ -5,11 +5,11 @@ export default function Contact() {
   return (
     <section id="contact" className="border-b border-ink/60">
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="flex items-center justify-center p-10 md:border-r md:border-ink/60 md:p-12">
+        <div className="flex items-center justify-center p-10 md:border-r md:border-ink/60 md:p-14">
           <img
             src={letsconnect}
             alt="NOIR studio brief papers — we don't decorate brands, we argue for them"
-            className="w-full max-w-150 h-auto"
+            className="w-full h-auto"
           />
         </div>
 

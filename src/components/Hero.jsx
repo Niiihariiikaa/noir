@@ -1,4 +1,4 @@
-﻿import hero1st from "../assets/laceys/1.png";
+﻿import hero1st from "../assets/hero1st.png";
 import hero2nd from "../assets/hero2nd.png";
 import laceysHero from "../assets/laceyshero.png";
 
@@ -37,7 +37,7 @@ export default function Hero() {
             <div className="w-1/2 md:w-[46%]">
               <img
                 src={hero1st}
-                alt="Espresso pouring into a Lacey's branded coffee cup"
+                alt="Sunbase mineral milk sunscreen tube styled on a striped moodboard page"
                 className="h-72 w-full object-cover md:aspect-2/3 md:h-auto md:max-h-[44vh]"
               />
             </div>
