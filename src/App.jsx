@@ -15,7 +15,22 @@ export default function App() {
   return (
     <div className="min-h-screen bg-cream text-ink">
       <ScrollToTop />
-      <div className="h-7 bg-stone" />
+      <div className="h-7 overflow-hidden bg-stone" aria-hidden="true">
+        <div className="flex h-7 w-max animate-marquee items-center">
+          {[0, 1].map((copy) => (
+            <div key={copy} className="flex shrink-0 items-center">
+              {Array.from({ length: 4 }).map((_, i) => (
+                <span
+                  key={`${copy}-${i}`}
+                  className="whitespace-nowrap px-6 text-[11px] tracking-tight"
+                >
+                  Booking <em>brand</em> &amp; <em>website</em> projects for Fall 2026!
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
       <Header />
       <main>
         <Routes>

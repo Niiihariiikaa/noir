@@ -1,6 +1,32 @@
 import processMockup from "../assets/about page/ABOUT3.svg";
 
-const steps = ["Brief", "Direction", "Design", "Refine", "Launch"];
+const steps = [
+  {
+    label: "Brief",
+    description:
+      "We read everything before we ask anything. Your business, your audience, your goals — understood before a single decision is made.",
+  },
+  {
+    label: "Direction",
+    description:
+      "Strategy, moodboards, and visual inspiration agreed before anything is built. You know exactly where we're headed before the work begins.",
+  },
+  {
+    label: "Design",
+    description:
+      "Every detail considered, every choice intentional. Work shared as it develops so you stay close to the process — no waiting, no guessing.",
+  },
+  {
+    label: "Refine",
+    description:
+      "Structured feedback that sharpens rather than restarts. We iterate until the work is something worth putting out.",
+  },
+  {
+    label: "Launch",
+    description:
+      "Clean files, clear handover, everything documented. The brand leaves the studio ready to work from day one.",
+  },
+];
 
 export default function AboutProcess() {
   return (
@@ -20,16 +46,24 @@ export default function AboutProcess() {
           <p className="mt-10 text-xs tracking-tighter text-ink/60">
             THE PROCESS
           </p>
-          <ul className="mt-2 max-w-sm">
+          <div className="mt-2 max-w-sm">
             {steps.map((step) => (
-              <li
-                key={step}
-                className="border-t border-ink/30 py-3 text-sm font-medium tracking-tighter uppercase last:border-b"
+              <details
+                key={step.label}
+                className="group border-t border-ink/30 py-3 last:border-b"
               >
-                {step}
-              </li>
+                <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-medium tracking-tighter uppercase marker:content-none [&::-webkit-details-marker]:hidden">
+                  {step.label}
+                  <span className="text-lg leading-none text-ink/40 transition-transform duration-300 group-open:rotate-45">
+                    +
+                  </span>
+                </summary>
+                <p className="mt-3 text-sm leading-relaxed tracking-normal text-ink/70 normal-case">
+                  {step.description}
+                </p>
+              </details>
             ))}
-          </ul>
+          </div>
         </div>
 
         <div className="flex items-center justify-center bg-coal p-10 md:p-14">

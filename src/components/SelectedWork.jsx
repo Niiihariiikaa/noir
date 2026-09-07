@@ -40,7 +40,7 @@ const projects = [
     image: vedicSaarCover,
     alt: "Vedic Saar embossed brand cover with sun emblem",
     href: "/work/vedic-saar",
-    layout: { text: 1, image: 2 },
+    layout: { text: 2, image: 3 },
   },
 ];
 
