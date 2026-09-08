@@ -100,11 +100,11 @@ export default function Laceys() {
 
       {/* Strategy + Deliverables — uniform 2x2 grid, equal cell dimensions */}
       <section className="border-b border-hairline">
-        <div
-          id="brand-strategy"
-          className="grid grid-cols-1 border-b border-hairline md:grid-cols-2 md:min-h-150"
-        >
-          <div className="flex flex-col justify-center px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div
+            id="brand-strategy"
+            className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-b md:border-hairline md:px-16 md:py-20"
+          >
             <h2 className="font-serif text-3xl italic md:text-4xl">
               Made With Care.
             </h2>
@@ -115,20 +115,18 @@ export default function Laceys() {
             </p>
           </div>
 
-          <div className="flex items-center px-8 py-16 md:px-16 md:py-20">
+          <div className="flex items-center border-b border-hairline px-8 py-16 md:px-16 md:py-20">
             <p className="text-center text-sm uppercase leading-relaxed tracking-tighter text-ink/80 md:text-base">
               Laceys&rsquo; identity is warm, inviting, and unmistakably
               crafted &mdash; built to make every visit feel like it was made
               for you.
             </p>
           </div>
-        </div>
 
-        <div
-          id="visual-identity"
-          className="grid grid-cols-1 md:grid-cols-2 md:min-h-150"
-        >
-          <div className="flex flex-col justify-center px-8 py-16 md:px-16 md:py-20">
+          <div
+            id="visual-identity"
+            className="flex flex-col justify-center px-8 pt-16 pb-10 md:border-r md:border-hairline md:px-16 md:pt-20 md:pb-4"
+          >
             <p className="text-xs tracking-tighter">DELIVERABLES</p>
             <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:ml-auto md:max-w-xs md:text-right">
               From the ground up &mdash; a complete brand identity and
@@ -137,13 +135,13 @@ export default function Laceys() {
               experience, not separate projects handed off in isolation.
             </p>
 
-            <div className="mt-10 flex max-w-xs flex-col gap-3 md:ml-auto">
+            <div className="mt-6 flex max-w-xs flex-col gap-2 md:ml-auto">
               {deliverableRows.map((row) => (
-                <div key={row[0]} className="flex justify-end gap-3">
+                <div key={row[0]} className="flex justify-end gap-2">
                   {row.map((item) => (
                     <span
                       key={item}
-                      className="whitespace-nowrap rounded-xs bg-[#161311] px-4.5 py-2.5 text-center text-[10px] uppercase tracking-[1.5px] text-white"
+                      className="whitespace-nowrap rounded-xs bg-[#161311] px-4.5 py-2 text-center text-[10px] uppercase tracking-[1.5px] text-white"
                     >
                       {item}
                     </span>
@@ -153,7 +151,7 @@ export default function Laceys() {
             </div>
           </div>
 
-          <div className="relative min-h-80 md:min-h-0 md:border-l md:border-hairline">
+          <div className="relative min-h-80 md:min-h-96">
             <img
               src={deliverablesMockup}
               alt="Lacey's storefront signage lit up with the script logo above the counter"

@@ -49,12 +49,13 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="border-b border-ink/60 md:border-b-0">
+        <div className="relative border-b border-ink/60 md:border-b-0">
           <img
             src={whatwebuild}
             alt="Mettali prints in a studio folder"
             className="h-full min-h-65 w-full object-cover"
           />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
 
         <div className="border-b border-ink/60 md:border-b-0">

@@ -1,0 +1,4 @@
+[344:27004:0908/205743.110:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[344:27004:0908/205743.146:ERROR:google_apis\gcm\engine\mcs_client.cc:702]   Error code: 401  Error message: Authentication Failed: wrong_secret
+[344:27004:0908/205743.146:ERROR:google_apis\gcm\engine\mcs_client.cc:704] Failed to log in to GCM, resetting connection.
+2835238 bytes written to file E:\noir_scratch\lc_v2_tall.png

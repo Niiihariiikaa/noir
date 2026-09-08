@@ -100,11 +100,11 @@ export default function Maison() {
 
       {/* Strategy + Deliverables — uniform 2x2 grid, equal cell dimensions */}
       <section className="border-b border-hairline">
-        <div
-          id="brand-strategy"
-          className="grid grid-cols-1 border-b border-hairline md:grid-cols-2 md:min-h-150"
-        >
-          <div className="flex flex-col justify-center px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div
+            id="brand-strategy"
+            className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-b md:border-hairline md:px-16 md:py-20"
+          >
             <h2 className="font-serif text-3xl italic md:text-4xl">
               L&rsquo;Art de la Fleur.
             </h2>
@@ -115,20 +115,18 @@ export default function Maison() {
             </p>
           </div>
 
-          <div className="flex items-center px-8 py-16 md:px-16 md:py-20">
+          <div className="flex items-center border-b border-hairline px-8 py-16 md:px-16 md:py-20">
             <p className="text-center text-sm uppercase leading-relaxed tracking-tighter text-ink/80 md:text-base">
               Maison Florale&rsquo;s identity is elegant, heritage-rooted, and
               deeply considered &mdash; built to make floral design feel like
               an art form again.
             </p>
           </div>
-        </div>
 
-        <div
-          id="visual-identity"
-          className="grid grid-cols-1 md:grid-cols-2 md:min-h-150"
-        >
-          <div className="flex flex-col justify-center px-8 py-16 md:px-16 md:py-20">
+          <div
+            id="visual-identity"
+            className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-hairline md:px-16 md:py-20"
+          >
             <p className="text-xs tracking-tighter">DELIVERABLES</p>
             <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:ml-auto md:max-w-xs md:text-right">
               From the ground up &mdash; a complete brand identity and print
@@ -153,7 +151,7 @@ export default function Maison() {
             </div>
           </div>
 
-          <div className="relative min-h-80 md:min-h-0 md:border-l md:border-hairline">
+          <div className="relative min-h-80 md:min-h-0">
             <img
               src={deliverablesMockup}
               alt="Maison Florale storefront window display with logo, taglines, and potted flowers"

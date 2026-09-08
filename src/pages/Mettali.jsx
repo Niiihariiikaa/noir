@@ -22,11 +22,12 @@ const deliverableRows = [
 ];
 
 const swatches = [
-  { name: "Charcoal", hex: "#2B2B2B" },
-  { name: "Brushed Silver", hex: "#B8BCC0" },
-  { name: "Warm White", hex: "#F2EFE9" },
-  { name: "Concrete", hex: "#9C9C94" },
-  { name: "Black", hex: "#0A0A0A" },
+  { name: "Raw Linen", hex: "#fffefc" },
+  { name: "Slate Moss", hex: "#716f57" },
+  { name: "Sandcast", hex: "#ad9e89" },
+  { name: "Smoked Bronze", hex: "#584738" },
+  { name: "Mulled Iron", hex: "#49110b" },
+  { name: "Indigo Metal", hex: "#142940" },
 ];
 
 const feelingImages = [
@@ -101,11 +102,11 @@ export default function Mettali() {
 
       {/* Strategy + Deliverables — uniform 2x2 grid, equal cell dimensions */}
       <section className="border-b border-hairline">
-        <div
-          id="brand-strategy"
-          className="grid grid-cols-1 border-b border-hairline md:grid-cols-2 md:min-h-150"
-        >
-          <div className="flex flex-col justify-center px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div
+            id="brand-strategy"
+            className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-b md:border-hairline md:px-16 md:py-20"
+          >
             <h2 className="font-serif text-3xl italic md:text-4xl">
               Form Follows Beauty.
             </h2>
@@ -116,20 +117,18 @@ export default function Mettali() {
             </p>
           </div>
 
-          <div className="flex items-center px-8 py-16 md:px-16 md:py-20">
+          <div className="flex items-center border-b border-hairline px-8 py-16 md:px-16 md:py-20">
             <p className="text-center text-sm uppercase leading-relaxed tracking-tighter text-ink/80 md:text-base">
               Mettali&rsquo;s identity is clean, editorial, and unmistakably
               premium &mdash; built to make everyday objects feel worth
               owning.
             </p>
           </div>
-        </div>
 
-        <div
-          id="visual-identity"
-          className="grid grid-cols-1 md:grid-cols-2 md:min-h-150"
-        >
-          <div className="flex flex-col justify-center px-8 py-16 md:px-16 md:py-20">
+          <div
+            id="visual-identity"
+            className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-hairline md:px-16 md:py-20"
+          >
             <p className="text-xs tracking-tighter">DELIVERABLES</p>
             <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:ml-auto md:max-w-xs md:text-right">
               From the ground up &mdash; a complete brand identity, custom
@@ -155,7 +154,7 @@ export default function Mettali() {
             </div>
           </div>
 
-          <div className="relative min-h-80 md:min-h-0 md:border-l md:border-hairline">
+          <div className="relative min-h-80 md:min-h-0">
             <img
               src={deliverablesMockup}
               alt="Tablet showing the Mettali 'Built For Every Room' signature products page on a boucle armchair"
@@ -191,11 +190,11 @@ export default function Mettali() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
             <p className="text-xs tracking-tighter">BRAND COLORS</p>
-            <div className="mt-6 grid grid-cols-[repeat(3,143px)] gap-6">
+            <div className="mt-6 grid grid-cols-[repeat(6,85px)] gap-6">
               {swatches.map((swatch) => (
                 <div key={swatch.hex}>
                   <div
-                    className="aspect-143/323 w-full border border-hairline"
+                    className="h-80.75 w-full border border-hairline"
                     style={{ backgroundColor: swatch.hex }}
                   />
                   <p className="mt-2 text-xs text-ink/80">{swatch.name}</p>

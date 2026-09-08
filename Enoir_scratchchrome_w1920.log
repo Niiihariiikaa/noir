@@ -1,0 +1,5 @@
+[11548:17584:0908/204319.057:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+20889 bytes written to file E:\noir_scratch\laceys_w1920.png
+[11548:17584:0908/204319.189:ERROR:google_apis\gcm\engine\mcs_client.cc:702]   Error code: 401  Error message: Authentication Failed: wrong_secret
+[11548:17584:0908/204319.189:ERROR:google_apis\gcm\engine\mcs_client.cc:704] Failed to log in to GCM, resetting connection.
+[11548:28576:0908/204319.211:ERROR:chrome\browser\web_applications\externally_managed_app_manager.cc:680] https://docs.google.com/presentation/installwebapp?usp=chrome_default from install source 1 failed to install with reason 21

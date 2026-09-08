@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import laceys from "../assets/laceys/1.png";
-import mettali from "../assets/mettali.png";
-import maisonflorale from "../assets/maisonflorale.png";
+import mettali from "../assets/mettali-work-cover.png";
+import maisonflorale from "../assets/maison-work-cover-2.png";
 import vedicSaarCover from "../assets/vedicpage/image1.svg";
 
 const projects = [

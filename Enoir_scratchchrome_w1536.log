@@ -1,0 +1,5 @@
+[27600:9268:0908/204310.525:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[27600:9268:0908/204310.554:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+19787 bytes written to file E:\noir_scratch\laceys_w1536.png
+[27600:25856:0908/204310.739:ERROR:chrome\browser\web_applications\os_integration\os_integration_manager.cc:261] Can't perform OS integration while the browser is shutting down.
+[27600:25856:0908/204310.756:ERROR:chrome\browser\web_applications\externally_managed_app_manager.cc:680] https://www.youtube.com/s/notifications/manifest/cr_install.html from install source 1 failed to install with reason 21
