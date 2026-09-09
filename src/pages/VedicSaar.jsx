@@ -51,7 +51,7 @@ export default function VedicSaar() {
             <img
               src={cover}
               alt="Embossed Vedic Saar brand cover with gold sun emblem"
-              className="w-full h-auto"
+              className="aspect-502/578 w-full object-cover"
             />
           </div>
 
@@ -60,7 +60,7 @@ export default function VedicSaar() {
             <h1 className="mt-6 font-serif text-3xl md:text-4xl">
               VEDIC SAAR by Manish Malhotra
             </h1>
-            <p className="mt-8 max-w-md text-justify text-sm leading-relaxed text-ink/75">
+            <p className="mt-8 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75">
               Vedic Saar is a holistic wellness and spiritual guidance brand
               offering astrology, numerology, and Vastu consultations &mdash;
               making ancient Vedic wisdom feel modern, approachable, and
@@ -68,7 +68,7 @@ export default function VedicSaar() {
               predictions, practical remedies, and personalised guidance that
               helps people find clarity and balance in their everyday lives.
             </p>
-            <p className="mt-4 max-w-md text-justify text-sm leading-relaxed text-ink/75">
+            <p className="mt-4 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75">
               Noir was brought in to build the complete brand identity,
               website, and print collateral from the ground up. The goal: a
               visual language rooted in Vedic heritage that also reads as
@@ -132,14 +132,16 @@ export default function VedicSaar() {
             id="visual-identity"
             className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-hairline md:px-16 md:py-20"
           >
-            <p className="text-xs tracking-tighter">DELIVERABLES</p>
-            <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:ml-auto md:max-w-xs md:text-right">
-              From the ground up &mdash; a complete brand identity, a full
-              custom website, and a print system that carries the same
-              visual language offline. Every deliverable built as one
-              connected system, not three separate projects handed off in
-              isolation.
-            </p>
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between md:gap-6">
+              <p className="text-xl font-normal tracking-tighter">DELIVERABLES</p>
+              <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:mt-0 md:max-w-xs md:text-right">
+                From the ground up &mdash; a complete brand identity, a full
+                custom website, and a print system that carries the same
+                visual language offline. Every deliverable built as one
+                connected system, not three separate projects handed off in
+                isolation.
+              </p>
+            </div>
 
             <div className="mt-10 flex max-w-xs flex-col gap-3 md:ml-auto">
               {deliverableRows.map((row) => (
@@ -181,7 +183,7 @@ export default function VedicSaar() {
               <img
                 src={img.src}
                 alt={img.alt}
-                className="aspect-3/4 w-full border border-hairline object-cover"
+                className="aspect-3/4 w-full object-cover"
               />
             </div>
           ))}
@@ -190,47 +192,49 @@ export default function VedicSaar() {
 
       {/* Brand Colors + Typography */}
       <section id="discoveries" className="border-b border-hairline">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
-            <p className="text-xs tracking-tighter">BRAND COLORS</p>
-            <div className="mt-6 grid grid-cols-[repeat(4,143px)] gap-6">
-              {swatches.map((swatch) => (
-                <div key={swatch.hex}>
-                  <div
-                    className="aspect-143/323 w-full border border-hairline"
-                    style={{ backgroundColor: swatch.hex }}
-                  />
-                  <p className="mt-2 text-xs text-ink/80">{swatch.name}</p>
-                  <p className="text-xs text-ink/50">{swatch.hex}</p>
-                </div>
-              ))}
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
+          <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
+            <p className="text-xl font-normal tracking-tighter">BRAND COLORS</p>
+            <div className="mt-6 flex justify-center">
+              <div className="grid grid-cols-[repeat(4,143px)] gap-6">
+                {swatches.map((swatch) => (
+                  <div key={swatch.hex}>
+                    <div
+                      className="aspect-143/323 w-full border border-hairline"
+                      style={{ backgroundColor: swatch.hex }}
+                    />
+                    <p className="mt-2 text-xs text-ink/80">{swatch.name}</p>
+                    <p className="text-xs text-ink/50">{swatch.hex}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
           <div className="px-8 py-16 md:px-16 md:py-20">
-            <p className="text-xs tracking-tighter">TYPOGRAPHY</p>
+            <p className="text-xl font-normal tracking-tighter">TYPOGRAPHY</p>
 
-            <p className="mt-8 text-xs tracking-tighter text-ink/50">PRIMARY</p>
+            <p className="mt-8 text-sm tracking-tighter text-ink/50">PRIMARY</p>
             <img
               src={typographyPrimary}
               alt="Where Ancient Wisdom Meets Modern Life."
-              className="mt-3 h-auto w-full max-w-75"
+              className="mt-3 h-auto w-full max-w-100"
             />
 
-            <p className="mt-8 text-xs tracking-tighter text-ink/50">
+            <p className="mt-8 text-sm tracking-tighter text-ink/50">
               SECONDARY
             </p>
             <img
               src={typographySecondary}
               alt="Astrology. Numerology. Vastu. Guidance that stays long after the session ends."
-              className="mt-3 h-auto w-full max-w-80"
+              className="mt-3 h-auto w-full max-w-105"
             />
 
-            <p className="mt-8 text-xs tracking-tighter text-ink/50">ACCENT</p>
+            <p className="mt-8 text-sm tracking-tighter text-ink/50">ACCENT</p>
             <img
               src={typographyAccent}
               alt="Clarity was always inside."
-              className="mt-3 h-auto w-full max-w-65"
+              className="mt-3 h-auto w-full max-w-90"
             />
           </div>
         </div>
@@ -247,7 +251,7 @@ export default function VedicSaar() {
               <img
                 src={img.src}
                 alt={img.alt}
-                className="aspect-3/4 w-full border border-hairline object-cover"
+                className="aspect-3/4 w-full object-cover"
               />
             </div>
           ))}

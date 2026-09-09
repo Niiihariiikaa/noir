@@ -1,4 +1,4 @@
-import processMockup from "../assets/about page/ABOUT3.svg";
+import processMockup from "../assets/about page/ABOUT4.png";
 
 const steps = [
   {
@@ -34,9 +34,9 @@ export default function AboutProcess() {
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="flex flex-col justify-center px-8 py-16 md:border-r md:border-ink/60 md:px-16 md:py-20">
           <h2 className="font-serif text-4xl leading-tight md:text-[44px]">
-            How <em>Every</em> Project
+            How <em className="mr-1.5">Every</em> Project
             <br />
-            <em>Comes</em> Together.
+            <em className="mr-1.5">Comes</em> Together.
           </h2>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink/70">
             Every project follows the same five steps &mdash; because good

@@ -15,7 +15,7 @@ export default function AboutIntro() {
         <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
           <p className="text-xs tracking-tighter">ABOUT THE STUDIO</p>
           <h1 className="mt-6 font-serif text-3xl md:text-4xl">
-            Our Work Is Grounded In <em>Strategy</em> And{" "}
+            Our Work Is Grounded In <em className="mr-1.5">Strategy</em> And{" "}
             <em>Editorial Discipline</em>.
           </h1>
           <p className="mt-8 max-w-md text-justify text-sm leading-relaxed text-ink/75">

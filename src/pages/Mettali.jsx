@@ -52,14 +52,14 @@ export default function Mettali() {
             <img
               src={cover}
               alt="Embossed METTALI brand cover wrapped in plastic"
-              className="w-full h-auto"
+              className="aspect-502/578 w-full object-cover"
             />
           </div>
 
           <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
             <p className="text-xs tracking-tighter">THE CLIENT</p>
             <h1 className="mt-6 font-serif text-3xl md:text-4xl">METTALI</h1>
-            <p className="mt-8 max-w-md text-justify text-sm leading-relaxed text-ink/75">
+            <p className="mt-8 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75">
               Mettali is a premium home d&eacute;cor brand built around the
               beauty of metal &mdash; aluminium objects designed to be
               functional and worth looking at. Vases, wine holders,
@@ -68,7 +68,7 @@ export default function Mettali() {
               catalogue that positioned Mettali as a design-led home brand,
               not just another product line.
             </p>
-            <p className="mt-4 max-w-md text-justify text-sm leading-relaxed text-ink/75">
+            <p className="mt-4 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75">
               Noir built the complete brand identity, website, and product
               catalogue &mdash; a full visual system designed to carry the
               same editorial weight across digital and print.
@@ -129,14 +129,16 @@ export default function Mettali() {
             id="visual-identity"
             className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-hairline md:px-16 md:py-20"
           >
-            <p className="text-xs tracking-tighter">DELIVERABLES</p>
-            <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:ml-auto md:max-w-xs md:text-right">
-              From the ground up &mdash; a complete brand identity, custom
-              website, and product catalogue built as one connected system.
-              Every deliverable designed to carry the same visual language
-              whether someone is browsing online or holding the catalogue in
-              their hands.
-            </p>
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between md:gap-6">
+              <p className="text-xl font-normal tracking-tighter">DELIVERABLES</p>
+              <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:mt-0 md:max-w-xs md:text-right">
+                From the ground up &mdash; a complete brand identity, custom
+                website, and product catalogue built as one connected system.
+                Every deliverable designed to carry the same visual language
+                whether someone is browsing online or holding the catalogue in
+                their hands.
+              </p>
+            </div>
 
             <div className="mt-10 flex max-w-xs flex-col gap-3 md:ml-auto">
               {deliverableRows.map((row) => (
@@ -178,7 +180,7 @@ export default function Mettali() {
               <img
                 src={img.src}
                 alt={img.alt}
-                className="aspect-3/4 w-full border border-hairline object-cover"
+                className="aspect-3/4 w-full object-cover"
               />
             </div>
           ))}
@@ -187,30 +189,34 @@ export default function Mettali() {
 
       {/* Brand Colors + Typography */}
       <section className="border-b border-hairline">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
-            <p className="text-xs tracking-tighter">BRAND COLORS</p>
-            <div className="mt-6 grid grid-cols-[repeat(6,85px)] gap-6">
-              {swatches.map((swatch) => (
-                <div key={swatch.hex}>
-                  <div
-                    className="h-80.75 w-full border border-hairline"
-                    style={{ backgroundColor: swatch.hex }}
-                  />
-                  <p className="mt-2 text-xs text-ink/80">{swatch.name}</p>
-                  <p className="text-xs text-ink/50">{swatch.hex}</p>
-                </div>
-              ))}
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
+          <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
+            <p className="text-xl font-normal tracking-tighter">BRAND COLORS</p>
+            <div className="mt-6 flex justify-center">
+              <div className="flex gap-6">
+                {swatches.map((swatch) => (
+                  <div key={swatch.hex} className="w-21.25">
+                    <div
+                      className="h-80.75 w-full border border-hairline"
+                      style={{ backgroundColor: swatch.hex }}
+                    />
+                    <p className="mt-2 text-xs text-ink/80">{swatch.name}</p>
+                    <p className="text-xs text-ink/50">{swatch.hex}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
-          <div className="px-8 py-16 md:px-16 md:py-20">
-            <p className="text-xs tracking-tighter">TYPOGRAPHY</p>
-            <img
-              src={typography}
-              alt="Mettali typography sheet: 'Aluminium, Shaped With Intention.' and 'Light in hand, lasting in place.'"
-              className="mt-6 h-auto w-full max-w-lg"
-            />
+          <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20">
+            <p className="text-xl font-normal tracking-tighter">TYPOGRAPHY</p>
+            <div className="mt-6">
+              <img
+                src={typography}
+                alt="Mettali typography sheet: 'Aluminium, Shaped With Intention.' and 'Light in hand, lasting in place.'"
+                className="h-auto w-full max-w-2xl"
+              />
+            </div>
           </div>
         </div>
       </section>

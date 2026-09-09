@@ -7,9 +7,9 @@ export default function AboutStory() {
         <p className="text-xs tracking-tighter">THE STORY BEHIND NOIR</p>
 
         <h2 className="mt-6 font-serif text-4xl leading-tight md:text-[44px]">
-          Design <em>Stays</em> With People.
+          Design <em className="mr-1.5">Stays</em> With People.
           <br />
-          That&rsquo;s <em>Why</em> It Matters.
+          That&rsquo;s <em className="mr-1.5">Why</em> It Matters.
         </h2>
 
         <img

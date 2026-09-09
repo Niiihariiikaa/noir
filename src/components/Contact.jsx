@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import letsconnect from "../assets/letsconnect.png";
+import letsconnect from "../assets/about page/ABOUT4.png";
 
 export default function Contact() {
   return (
@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
           <p className="text-xs tracking-tighter">LET&rsquo;S CONNECT</p>
           <h2 className="mt-6 font-serif text-3xl md:text-4xl">
-            The <em>Brief</em> Before The Brand.
+            The <em className="mr-1.5">Brief</em> Before The Brand.
           </h2>
           <p className="mt-8 max-w-md text-justify text-sm leading-relaxed text-ink/75">
             Tell us what you&rsquo;re building, who it&rsquo;s for, and what&rsquo;s not working

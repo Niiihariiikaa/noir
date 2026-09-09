@@ -50,14 +50,14 @@ export default function Laceys() {
             <img
               src={cover}
               alt="Espresso pouring into a maroon Lacey's cup reading 'Where every sip feels like home'"
-              className="w-full h-auto"
+              className="aspect-502/578 w-full object-cover"
             />
           </div>
 
           <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
             <p className="text-xs tracking-tighter">THE CLIENT</p>
             <h1 className="mt-6 font-serif text-3xl md:text-4xl">LACEYS</h1>
-            <p className="mt-8 max-w-md text-justify text-sm leading-relaxed text-ink/75">
+            <p className="mt-8 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75">
               Laceys is an artisan caf&eacute; and bakehouse brand built
               around the idea that every visit should feel like a pause
               &mdash; warm, considered, and worth coming back for. The brief
@@ -65,7 +65,7 @@ export default function Laceys() {
               it represented, and a digital presence that made someone want
               to walk in before they&rsquo;d even looked at the menu.
             </p>
-            <p className="mt-4 max-w-md text-justify text-sm leading-relaxed text-ink/75">
+            <p className="mt-4 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75">
               Noir built the complete brand identity and social direction
               from the ground up &mdash; logo suite, color system,
               typography, and a content framework the team could run with
@@ -127,13 +127,15 @@ export default function Laceys() {
             id="visual-identity"
             className="flex flex-col justify-center px-8 pt-16 pb-10 md:border-r md:border-hairline md:px-16 md:pt-20 md:pb-4"
           >
-            <p className="text-xs tracking-tighter">DELIVERABLES</p>
-            <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:ml-auto md:max-w-xs md:text-right">
-              From the ground up &mdash; a complete brand identity and
-              social content system that carries the same warmth offline
-              and online. Every deliverable built as one connected
-              experience, not separate projects handed off in isolation.
-            </p>
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between md:gap-6">
+              <p className="text-xl font-normal tracking-tighter">DELIVERABLES</p>
+              <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:mt-0 md:max-w-xs md:text-right">
+                From the ground up &mdash; a complete brand identity and
+                social content system that carries the same warmth offline
+                and online. Every deliverable built as one connected
+                experience, not separate projects handed off in isolation.
+              </p>
+            </div>
 
             <div className="mt-6 flex max-w-xs flex-col gap-2 md:ml-auto">
               {deliverableRows.map((row) => (
@@ -175,7 +177,7 @@ export default function Laceys() {
               <img
                 src={img.src}
                 alt={img.alt}
-                className="aspect-3/4 w-full border border-hairline object-cover"
+                className="aspect-3/4 w-full object-cover"
               />
             </div>
           ))}
@@ -184,30 +186,34 @@ export default function Laceys() {
 
       {/* Brand Colors + Typography */}
       <section id="social-direction" className="border-b border-hairline">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
-            <p className="text-xs tracking-tighter">BRAND COLORS</p>
-            <div className="mt-6 grid grid-cols-[repeat(4,143px)] gap-6">
-              {swatches.map((swatch) => (
-                <div key={swatch.hex}>
-                  <div
-                    className="aspect-143/323 w-full border border-hairline"
-                    style={{ backgroundColor: swatch.hex }}
-                  />
-                  <p className="mt-2 text-xs text-ink/80">{swatch.name}</p>
-                  <p className="text-xs text-ink/50">{swatch.hex}</p>
-                </div>
-              ))}
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
+          <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
+            <p className="text-xl font-normal tracking-tighter">BRAND COLORS</p>
+            <div className="mt-6 flex justify-center">
+              <div className="grid grid-cols-[repeat(4,143px)] gap-6">
+                {swatches.map((swatch) => (
+                  <div key={swatch.hex}>
+                    <div
+                      className="aspect-143/323 w-full border border-hairline"
+                      style={{ backgroundColor: swatch.hex }}
+                    />
+                    <p className="mt-2 text-xs text-ink/80">{swatch.name}</p>
+                    <p className="text-xs text-ink/50">{swatch.hex}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
-          <div className="flex flex-col justify-center px-8 py-16 md:px-16 md:py-20">
-            <p className="text-xs tracking-tighter">TYPOGRAPHY</p>
-            <img
-              src={typography}
-              alt="Lacey's typography sheet: 'Soft Mornings, Made Daily.' and 'Where every sip feels like home.'"
-              className="mt-6 h-auto w-full max-w-lg"
-            />
+          <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20">
+            <p className="text-xl font-normal tracking-tighter">TYPOGRAPHY</p>
+            <div className="mt-6">
+              <img
+                src={typography}
+                alt="Lacey's typography sheet: 'Soft Mornings, Made Daily.' and 'Where every sip feels like home.'"
+                className="h-auto w-full max-w-2xl"
+              />
+            </div>
           </div>
         </div>
       </section>

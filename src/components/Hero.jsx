@@ -1,6 +1,6 @@
 ﻿import hero1st from "../assets/hero1st.png";
 import hero2nd from "../assets/hero2nd.png";
-import laceysHero from "../assets/laceyshero-cropped.png";
+import laceysHero from "../assets/laceyshero.png";
 
 export default function Hero() {
   return (
@@ -34,13 +34,12 @@ export default function Hero() {
         {/* Image strip */}
         <div className="mt-10 grid grid-cols-1 items-end gap-6 md:mt-8 md:grid-cols-12 md:gap-0">
           <div className="flex gap-3 md:col-span-5">
-            <div className="relative w-1/2 md:w-[46%]">
+            <div className="w-1/2 md:w-[46%]">
               <img
                 src={hero1st}
                 alt="Sunbase mineral milk sunscreen tube styled on a striped moodboard page"
                 className="h-72 w-full object-cover md:aspect-2/3 md:h-auto md:max-h-[44vh]"
               />
-              <div className="absolute inset-0 bg-black/40" />
             </div>
             <div className="w-1/2 md:w-[46%]">
               <img
@@ -61,14 +60,11 @@ export default function Hero() {
 
           <div className="md:col-span-4 md:col-start-9">
             <p className="mb-2 text-xs tracking-tighter">VOL. 01</p>
-            <div className="relative">
-              <img
-                src={laceysHero}
-                alt="Person holding a Lacey's tote bag"
-                className="h-72 w-full object-cover md:aspect-3/2 md:h-auto md:max-h-[34vh]"
-              />
-              <div className="absolute inset-0 bg-black/40" />
-            </div>
+            <img
+              src={laceysHero}
+              alt="Person holding a Lacey's tote bag"
+              className="h-72 w-full object-cover md:aspect-3/2 md:h-auto md:max-h-[34vh]"
+            />
           </div>
         </div>
       </div>

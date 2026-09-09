@@ -7,7 +7,7 @@ export default function Manifesto() {
         <h2 className="font-serif text-4xl leading-tight md:text-[44px]">
           Good Design <em>Begins</em>
           <br />
-          When We <em>Commit</em> To a
+          When We <em className="mr-1.5">Commit</em> To a
           <br />
           <em>Point Of View</em>
         </h2>
