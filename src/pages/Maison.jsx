@@ -189,12 +189,12 @@ export default function Maison() {
         <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
           <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
             <p className="text-xl font-normal tracking-tighter">BRAND COLORS</p>
-            <div className="mt-6 flex justify-center">
+            <div className="mt-22 flex justify-center">
               <div className="grid grid-cols-[repeat(4,143px)] gap-6">
                 {swatches.map((swatch) => (
                   <div key={swatch.hex}>
                     <div
-                      className="aspect-143/323 w-full border border-hairline"
+                      className="h-80.75 w-35.75 border border-hairline"
                       style={{ backgroundColor: swatch.hex }}
                     />
                     <p className="mt-2 text-xs text-ink/80">{swatch.name}</p>
@@ -207,11 +207,11 @@ export default function Maison() {
 
           <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20">
             <p className="text-xl font-normal tracking-tighter">TYPOGRAPHY</p>
-            <div className="mt-6">
+            <div className="mt-0">
               <img
                 src={typography}
                 alt="Maison Florale typography sheet: 'Where Flowers Become Composition.' and 'Every bloom, placed with purpose.'"
-                className="h-auto w-full max-w-2xl"
+                className="h-auto w-full max-w-4xl md:w-[calc(100%+3rem)] md:-mx-6"
               />
             </div>
           </div>

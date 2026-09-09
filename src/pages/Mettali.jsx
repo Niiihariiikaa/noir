@@ -192,10 +192,10 @@ export default function Mettali() {
         <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
           <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
             <p className="text-xl font-normal tracking-tighter">BRAND COLORS</p>
-            <div className="mt-6 flex justify-center">
+            <div className="mt-24 flex w-full justify-center">
               <div className="flex gap-6">
                 {swatches.map((swatch) => (
-                  <div key={swatch.hex} className="w-21.25">
+                  <div key={swatch.hex} className="w-25">
                     <div
                       className="h-80.75 w-full border border-hairline"
                       style={{ backgroundColor: swatch.hex }}
@@ -210,11 +210,11 @@ export default function Mettali() {
 
           <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20">
             <p className="text-xl font-normal tracking-tighter">TYPOGRAPHY</p>
-            <div className="mt-6">
+            <div className="mt-0">
               <img
                 src={typography}
                 alt="Mettali typography sheet: 'Aluminium, Shaped With Intention.' and 'Light in hand, lasting in place.'"
-                className="h-auto w-full max-w-2xl"
+                className="h-auto w-full max-w-4xl md:w-[calc(100%+8rem)] md:-mx-16"
               />
             </div>
           </div>

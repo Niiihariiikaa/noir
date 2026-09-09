@@ -1,5 +1,5 @@
 ﻿import hero1st from "../assets/hero1st.png";
-import hero2nd from "../assets/hero2nd.png";
+import hero2nd from "../assets/maison-work cover.png";
 import laceysHero from "../assets/laceyshero.png";
 
 export default function Hero() {
