@@ -6,7 +6,9 @@ import posterFeeling from "../assets/mettali/5.png";
 import chairMockup from "../assets/mettali/6.png";
 import foilMockup from "../assets/mettali/7.png";
 import campaignMockup from "../assets/mettali/8.png";
-import typography from "../assets/mettali/typography.png";
+import typographyPrimary from "../assets/mettali/typography1.svg";
+import typographySecondary from "../assets/mettali/typography2.svg";
+import typographyAccent from "../assets/mettali/typography3.svg";
 
 const chapters = [
   { label: "BRAND STRATEGY", href: "#brand-strategy" },
@@ -189,10 +191,10 @@ export default function Mettali() {
 
       {/* Brand Colors + Typography */}
       <section className="border-b border-hairline">
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
+        <div className="grid grid-cols-1 md:min-h-169.5 md:grid-cols-[3fr_2fr]">
           <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
             <p className="text-xl font-normal tracking-tighter">BRAND COLORS</p>
-            <div className="mt-24 flex w-full justify-center">
+            <div className="mt-13.5 flex w-full">
               <div className="flex gap-6">
                 {swatches.map((swatch) => (
                   <div key={swatch.hex} className="w-25">
@@ -210,13 +212,27 @@ export default function Mettali() {
 
           <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20">
             <p className="text-xl font-normal tracking-tighter">TYPOGRAPHY</p>
-            <div className="mt-0">
-              <img
-                src={typography}
-                alt="Mettali typography sheet: 'Aluminium, Shaped With Intention.' and 'Light in hand, lasting in place.'"
-                className="h-auto w-full max-w-4xl md:w-[calc(100%+8rem)] md:-mx-16"
-              />
-            </div>
+
+            <p className="mt-13.5 text-xs tracking-tighter text-ink/50">PRIMARY</p>
+            <img
+              src={typographyPrimary}
+              alt="Aluminium, Shaped With Intention."
+              className="mt-3 h-auto w-full max-w-96"
+            />
+
+            <p className="mt-12 text-xs tracking-tighter text-ink/50">SECONDARY</p>
+            <img
+              src={typographySecondary}
+              alt="Vases, wine holders, racks and shelves — designed in aluminium for homes that treat function as form."
+              className="mt-3 h-auto w-full max-w-96"
+            />
+
+            <p className="mt-12 text-xs tracking-tighter text-ink/50">ACCENT</p>
+            <img
+              src={typographyAccent}
+              alt="Light in hand, lasting in place."
+              className="mt-3 h-auto w-full max-w-90"
+            />
           </div>
         </div>
       </section>

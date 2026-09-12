@@ -6,7 +6,9 @@ import paintingFeeling from "../assets/maison/5.png";
 import laceMockup from "../assets/maison/6.png";
 import posterMockup from "../assets/maison/7.png";
 import stationeryMockup from "../assets/maison/8.png";
-import typography from "../assets/maison/typography.png";
+import typographyPrimary from "../assets/maison/typography1.svg";
+import typographySecondary from "../assets/maison/typography2.svg";
+import typographyAccent from "../assets/maison/typography3.svg";
 
 const chapters = [
   { label: "BRAND STRATEGY", href: "#brand-strategy" },
@@ -186,11 +188,11 @@ export default function Maison() {
 
       {/* Brand Colors + Typography */}
       <section className="border-b border-hairline">
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
+        <div className="grid grid-cols-1 md:min-h-169.5 md:grid-cols-[3fr_2fr]">
           <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
             <p className="text-xl font-normal tracking-tighter">BRAND COLORS</p>
-            <div className="mt-22 flex justify-center">
-              <div className="grid grid-cols-[repeat(4,143px)] gap-6">
+            <div className="mt-13.5 flex">
+              <div className="grid grid-cols-[repeat(4,143px)] gap-10">
                 {swatches.map((swatch) => (
                   <div key={swatch.hex}>
                     <div
@@ -207,13 +209,27 @@ export default function Maison() {
 
           <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20">
             <p className="text-xl font-normal tracking-tighter">TYPOGRAPHY</p>
-            <div className="mt-0">
-              <img
-                src={typography}
-                alt="Maison Florale typography sheet: 'Where Flowers Become Composition.' and 'Every bloom, placed with purpose.'"
-                className="h-auto w-full max-w-4xl md:w-[calc(100%+3rem)] md:-mx-6"
-              />
-            </div>
+
+            <p className="mt-13.5 text-xs tracking-tighter text-ink/50">PRIMARY</p>
+            <img
+              src={typographyPrimary}
+              alt="Where Flowers Become Composition."
+              className="mt-3 h-auto w-full max-w-96"
+            />
+
+            <p className="mt-12 text-xs tracking-tighter text-ink/50">SECONDARY</p>
+            <img
+              src={typographySecondary}
+              alt="Art Floral &amp; Botanique. Arrangements composed for occasions, interiors, and the ordinary day."
+              className="mt-3 h-auto w-full max-w-96"
+            />
+
+            <p className="mt-12 text-xs tracking-tighter text-ink/50">ACCENT</p>
+            <img
+              src={typographyAccent}
+              alt="Every bloom, placed with purpose."
+              className="mt-3 h-auto w-full max-w-90"
+            />
           </div>
         </div>
       </section>
@@ -229,7 +245,7 @@ export default function Maison() {
               <img
                 src={img.src}
                 alt={img.alt}
-                className="aspect-3/4 w-full border border-hairline object-cover"
+                className="aspect-3/4 w-full object-cover"
               />
             </div>
           ))}

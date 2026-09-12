@@ -22,7 +22,7 @@ export default function Hero() {
               Good design starts with content. A beautiful layout means nothing
               if there&rsquo;s nothing to say.
             </h2>
-            <p className="mt-3 text-sm leading-relaxed text-ink/70">
+            <p className="mt-3 text-justify text-xl leading-5 tracking-tighter text-ink/70">
               We treat every project like a piece of writing &mdash; there&rsquo;s a
               brief, a structure, an argument, and an edit at the end.
               Inspiration matters less than discipline. If the idea is clear,
@@ -51,7 +51,7 @@ export default function Hero() {
           </div>
 
           <div className="md:col-span-2 md:col-start-6 md:pl-6">
-            <p className="text-justify text-sm leading-relaxed text-ink/80">
+            <p className="text-justify text-sm leading-snug text-ink/80">
               Good design starts with clarity. A beautiful layout means nothing
               if there&rsquo;s no argument underneath it. At that point,
               it&rsquo;s just decoration.

@@ -6,7 +6,9 @@ import signageFeeling from "../assets/laceys/5.png";
 import flatlayCollateral from "../assets/laceys/6.png";
 import mugCollateral from "../assets/laceys/7.png";
 import bagCollateral from "../assets/laceys/8.png";
-import typography from "../assets/laceys/typography.png";
+import typographyPrimary from "../assets/laceys/typography1.svg";
+import typographySecondary from "../assets/laceys/typography2.svg";
+import typographyAccent from "../assets/laceys/typography3.svg";
 
 const chapters = [
   { label: "BRAND STRATEGY", href: "#brand-strategy" },
@@ -186,11 +188,11 @@ export default function Laceys() {
 
       {/* Brand Colors + Typography */}
       <section id="social-direction" className="border-b border-hairline">
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
+        <div className="grid grid-cols-1 md:min-h-169.5 md:grid-cols-[3fr_2fr]">
           <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
             <p className="text-xl font-normal tracking-tighter">BRAND COLORS</p>
-            <div className="mt-22 flex justify-center">
-              <div className="grid grid-cols-[repeat(4,143px)] gap-6">
+            <div className="mt-13.5 flex">
+              <div className="grid grid-cols-[repeat(4,143px)] gap-10">
                 {swatches.map((swatch) => (
                   <div key={swatch.hex}>
                     <div
@@ -207,13 +209,27 @@ export default function Laceys() {
 
           <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20">
             <p className="text-xl font-normal tracking-tighter">TYPOGRAPHY</p>
-            <div className="mt-0">
-              <img
-                src={typography}
-                alt="Lacey's typography sheet: 'Soft Mornings, Made Daily.' and 'Where every sip feels like home.'"
-                className="h-auto w-full max-w-4xl md:w-[calc(100%+3rem)] md:-mx-6"
-              />
-            </div>
+
+            <p className="mt-13.5 text-xs tracking-tighter text-ink/50">PRIMARY</p>
+            <img
+              src={typographyPrimary}
+              alt="Soft Mornings, Made Daily."
+              className="mt-3 h-auto w-full max-w-96"
+            />
+
+            <p className="mt-12 text-xs tracking-tighter text-ink/50">SECONDARY</p>
+            <img
+              src={typographySecondary}
+              alt="Fresh pastries, slow coffee and matcha, made in small batches every morning."
+              className="mt-3 h-auto w-full max-w-96"
+            />
+
+            <p className="mt-12 text-xs tracking-tighter text-ink/50">ACCENT</p>
+            <img
+              src={typographyAccent}
+              alt="Where every sip feels like home."
+              className="mt-3 h-auto w-full max-w-90"
+            />
           </div>
         </div>
       </section>

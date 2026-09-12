@@ -192,11 +192,11 @@ export default function VedicSaar() {
 
       {/* Brand Colors + Typography */}
       <section id="discoveries" className="border-b border-hairline">
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
+        <div className="grid grid-cols-1 md:min-h-169.5 md:grid-cols-[3fr_2fr]">
           <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
             <p className="text-xl font-normal tracking-tighter">BRAND COLORS</p>
-            <div className="mt-22 flex justify-center">
-              <div className="grid grid-cols-[repeat(4,143px)] gap-6">
+            <div className="mt-13.5 flex">
+              <div className="grid grid-cols-[repeat(4,143px)] gap-10">
                 {swatches.map((swatch) => (
                   <div key={swatch.hex}>
                     <div

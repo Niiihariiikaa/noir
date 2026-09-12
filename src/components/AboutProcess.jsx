@@ -1,4 +1,4 @@
-import processMockup from "../assets/about page/ABOUT4.png";
+import processMockup from "../assets/about page/ABOUT3.svg";
 
 const steps = [
   {
@@ -31,7 +31,7 @@ const steps = [
 export default function AboutProcess() {
   return (
     <section className="border-b border-ink/60">
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-[835fr_680fr]">
         <div className="flex flex-col justify-center px-8 py-16 md:border-r md:border-ink/60 md:px-16 md:py-20">
           <h2 className="font-serif text-4xl leading-tight md:text-[44px]">
             How <em className="mr-1.5">Every</em> Project
@@ -66,11 +66,11 @@ export default function AboutProcess() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center bg-coal p-10 md:p-14">
+        <div>
           <img
             src={processMockup}
-            alt="Lacey's brand deliverable mockup, paperclipped with an iced coffee photo"
-            className="h-full max-h-125 w-auto object-contain"
+            alt="Studio process mockup"
+            className="block h-auto w-full"
           />
         </div>
       </div>
