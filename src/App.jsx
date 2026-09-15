@@ -10,6 +10,7 @@ import Laceys from "./pages/Laceys.jsx";
 import Mettali from "./pages/Mettali.jsx";
 import Maison from "./pages/Maison.jsx";
 import Contact from "./pages/Contact.jsx";
+import Faqs from "./pages/Faqs.jsx";
 
 export default function App() {
   return (
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="/work/mettali" element={<Mettali />} />
           <Route path="/work/maison-florale" element={<Maison />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/faqs" element={<Faqs />} />
         </Routes>
       </main>
       <Footer />

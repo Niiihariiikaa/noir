@@ -9,13 +9,13 @@ const columns = [
     links: [
       { label: "Work", href: "/work" },
       { label: "About us", href: "/about" },
-      { label: "Services", href: "/" },
+      { label: "Services", href: "/#services" },
     ],
   },
   {
     heading: "Info",
     links: [
-      { label: "FAQs", href: "/" },
+      { label: "FAQs", href: "/faqs" },
       { label: "Start a Project", href: "/contact" },
     ],
   },
@@ -54,27 +54,16 @@ export default function Footer() {
             <div key={column.heading}>
               <p className="font-serif text-xl italic">{column.heading}</p>
               <ul className="mt-5 space-y-3">
-                {column.links.map((link) =>
-                  link.href.startsWith("/#") ? (
-                    <li key={link.label}>
-                      <a
-                        href={link.href}
-                        className="text-xs tracking-tighter text-ink/75 underline underline-offset-4 transition-colors hover:text-ink"
-                      >
-                        {link.label}
-                      </a>
-                    </li>
-                  ) : (
-                    <li key={link.label}>
-                      <Link
-                        to={link.href}
-                        className="text-xs tracking-tighter text-ink/75 underline underline-offset-4 transition-colors hover:text-ink"
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  )
-                )}
+                {column.links.map((link) => (
+                  <li key={link.label}>
+                    <Link
+                      to={link.href}
+                      className="text-xs tracking-tighter text-ink/75 underline underline-offset-4 transition-colors hover:text-ink"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           ))}

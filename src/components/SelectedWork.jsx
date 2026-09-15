@@ -78,8 +78,8 @@ export default function SelectedWork({ hideLabel = false }) {
         </p>
       )}
 
-      <div className="hidden px-16 pb-5 md:block">
-        <div className="border-x border-b border-ink/60">
+      <div className="hidden px-16 md:block">
+        <div className="border-x border-ink/60">
           {projects.map((project) => (
             <div
               key={project.code}
@@ -104,6 +104,7 @@ export default function SelectedWork({ hideLabel = false }) {
           ))}
         </div>
       </div>
+      <div className="hidden h-10 border-t border-ink/60 md:block" />
 
       {/* Mobile: simple stacked cards */}
       <div className="md:hidden">

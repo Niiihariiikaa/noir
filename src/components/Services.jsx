@@ -4,7 +4,7 @@ import whatwebuild3 from "../assets/whatwebuild3.png";
 
 export default function Services() {
   return (
-    <section className="border-b border-ink/60">
+    <section id="services" className="scroll-mt-16.5 border-b border-ink/60">
       {/* Row 1: [ What we Build — spans 2 cols ][ image ][ BRAND & WEB DESIGN ] */}
       <div className="grid grid-cols-1 border-b border-ink/60 md:min-h-90 md:grid-cols-4 md:divide-x md:divide-ink/60">
         <div className="flex min-h-75 flex-col justify-between border-b border-ink/60 p-6 md:col-span-2 md:border-b-0 md:p-8">
