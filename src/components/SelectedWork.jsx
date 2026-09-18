@@ -83,7 +83,7 @@ export default function SelectedWork({ hideLabel = false }) {
           {projects.map((project) => (
             <div
               key={project.code}
-              className="grid h-[56vh] min-h-80 grid-cols-4 divide-x divide-ink/60 border-b border-ink/60 last:border-b-0"
+              className="grid h-[min(56vh,33vw)] min-h-80 grid-cols-4 divide-x divide-ink/60 border-b border-ink/60 last:border-b-0"
             >
               {[1, 2, 3, 4].map((col) => {
                 if (col === project.layout.text)
