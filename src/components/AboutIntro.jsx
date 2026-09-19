@@ -4,7 +4,7 @@ export default function AboutIntro() {
   return (
     <section className="border-b border-ink/60">
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="flex items-center justify-center p-10 md:p-14">
+        <div className="flex items-center justify-center p-10 md:p-14 phone:p-6 phone:pb-0">
           <img
             src={studioPhoto}
             alt="Overhead shot of hands typing on a laptop beside a notebook and candle"
@@ -12,7 +12,7 @@ export default function AboutIntro() {
           />
         </div>
 
-        <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
+        <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20 phone:px-6 phone:py-12">
           <p className="text-xs tracking-tighter">ABOUT THE STUDIO</p>
           <h1 className="mt-6 font-serif text-3xl md:text-4xl phone:text-[28px]">
             Our Work Is Grounded In <em className="mr-1.5">Strategy</em> And{" "}

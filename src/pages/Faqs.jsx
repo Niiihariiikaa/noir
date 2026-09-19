@@ -154,7 +154,7 @@ export default function Faqs() {
   return (
     <>
       <section className="border-b border-ink/60">
-        <div className="mx-auto max-w-3xl px-6 py-20 text-center md:py-24">
+        <div className="mx-auto max-w-3xl px-6 py-20 text-center md:py-24 phone:py-16">
           <p className="text-xs tracking-tighter">FAQS</p>
           <h1 className="mt-6 font-serif text-4xl leading-tight md:text-[56px]">
             Questions, <em>Answered</em>.
@@ -249,7 +249,7 @@ export default function Faqs() {
       </section>
 
       <section className="border-b border-ink/60 bg-espresso text-cream">
-        <div className="mx-auto max-w-2xl px-6 py-24 text-center">
+        <div className="mx-auto max-w-2xl px-6 py-24 text-center phone:py-16">
           <h2 className="font-serif text-3xl leading-snug md:text-[32px] phone:text-[28px]">
             Still have a question?
           </h2>

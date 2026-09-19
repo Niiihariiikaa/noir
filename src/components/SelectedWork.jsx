@@ -47,11 +47,11 @@ const projects = [
 function TextCell({ project }) {
   const isRoute = project.href.startsWith("/");
   const buttonClass =
-    "mt-8 inline-block border border-ink px-4 py-2 text-[11px] tracking-tighter transition-colors hover:bg-ink hover:text-cream phone:mt-2.5 phone:whitespace-nowrap phone:border-ink/60 phone:px-1.5 phone:py-1 phone:text-[8px] phone:font-light";
+    "mt-8 inline-block border border-ink px-4 py-2 text-[11px] tracking-tighter transition-colors hover:bg-ink hover:text-cream phone:mt-2.5 phone:whitespace-nowrap phone:border-ink/60 phone:px-1 phone:py-1 phone:text-[8px] phone:font-light";
 
   // Phones show a proportional miniature of the laptop cell.
   return (
-    <div className="flex h-full min-w-0 flex-col justify-between p-5 phone:p-1.5">
+    <div className="flex h-full min-w-0 flex-col justify-between p-5 phone:p-2">
       <p className="text-xs tracking-tighter phone:text-[8px] phone:font-light">{project.code}</p>
       <div>
         <h3 className="font-serif text-[32px] phone:text-[13px] phone:leading-tight">{project.name}</h3>
@@ -79,12 +79,12 @@ export default function SelectedWork({ hideLabel = false }) {
         </p>
       )}
 
-      <div className="px-[5%] md:px-16">
+      <div className="px-6 md:px-16">
         <div className="border-x border-ink/60">
           {projects.map((project) => (
             <div
               key={project.code}
-              className="grid aspect-[1152/421] grid-cols-4 md:aspect-auto md:h-[min(56vh,33vw)] md:min-h-80 divide-x divide-ink/60 border-b border-ink/60 last:border-b-0"
+              className="grid aspect-[5/2] grid-cols-4 md:aspect-auto md:h-[min(56vh,33vw)] md:min-h-80 divide-x divide-ink/60 border-b border-ink/60 last:border-b-0"
             >
               {[1, 2, 3, 4].map((col) => {
                 if (col === project.layout.text)
@@ -105,7 +105,7 @@ export default function SelectedWork({ hideLabel = false }) {
           ))}
         </div>
       </div>
-      <div className="h-[3.125vw] border-t border-ink/60 md:h-10" />
+      <div className="h-6 border-t border-ink/60 md:h-10" />
 
     </section>
   );

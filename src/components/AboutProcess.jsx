@@ -32,7 +32,7 @@ export default function AboutProcess() {
   return (
     <section className="border-b border-ink/60">
       <div className="grid grid-cols-1 md:grid-cols-[835fr_680fr]">
-        <div className="flex flex-col justify-center px-8 py-16 md:border-r md:border-ink/60 md:px-16 md:py-20">
+        <div className="flex flex-col justify-center px-8 py-16 md:border-r md:border-ink/60 md:px-16 md:py-20 phone:px-6 phone:py-12">
           <h2 className="font-serif text-4xl leading-tight md:text-[44px]">
             How <em className="mr-1.5">Every</em> Project
             <br />

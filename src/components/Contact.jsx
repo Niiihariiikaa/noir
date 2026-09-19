@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section id="contact" className="border-b border-ink/60">
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="flex items-center justify-center p-10 md:border-r md:border-ink/60 md:p-14">
+        <div className="flex items-center justify-center p-10 md:border-r md:border-ink/60 md:p-14 phone:p-6 phone:pb-0">
           <img
             src={letsconnect}
             alt="NOIR studio brief papers — we don't decorate brands, we argue for them"
@@ -13,7 +13,7 @@ export default function Contact() {
           />
         </div>
 
-        <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
+        <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20 phone:px-6 phone:py-12">
           <p className="text-xs tracking-tighter">LET&rsquo;S CONNECT</p>
           <h2 className="mt-6 font-serif text-3xl md:text-4xl phone:text-[28px]">
             The <em className="mr-1.5">Brief</em> Before The Brand.

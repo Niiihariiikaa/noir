@@ -3,7 +3,7 @@
 export default function Manifesto() {
   return (
     <section id="about" className="border-b border-ink/60">
-      <div className="mx-auto max-w-3xl px-6 py-24 text-center">
+      <div className="mx-auto max-w-3xl px-6 py-24 text-center phone:py-16">
         <h2 className="font-serif text-4xl leading-tight md:text-[44px]">
           Good Design <em>Begins</em>
           {" "}

@@ -3,7 +3,7 @@ import storyImage from "../assets/about page/ABOUT2.png";
 export default function AboutStory() {
   return (
     <section className="border-b border-ink/60 bg-stone">
-      <div className="mx-auto max-w-3xl px-6 py-24 text-center">
+      <div className="mx-auto max-w-3xl px-6 py-24 text-center phone:py-16">
         <p className="text-xs tracking-tighter">THE STORY BEHIND NOIR</p>
 
         <h2 className="mt-6 font-serif text-4xl leading-tight md:text-[44px]">

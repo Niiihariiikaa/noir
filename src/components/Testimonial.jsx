@@ -38,7 +38,7 @@ export default function Testimonial() {
 
   return (
     <section className="border-b border-ink/60">
-      <div className="mx-auto max-w-2xl px-6 py-24 text-center">
+      <div className="mx-auto max-w-2xl px-6 py-24 text-center phone:py-16">
         <blockquote className="font-serif text-xl leading-relaxed md:text-[22px]">
           &ldquo;{current.quote}&rdquo;
         </blockquote>

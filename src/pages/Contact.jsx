@@ -83,7 +83,7 @@ export default function Contact() {
 
   return (
     <section className="border-b border-ink/60">
-      <div className="mx-auto max-w-3xl px-6 py-24 text-center md:py-32">
+      <div className="mx-auto max-w-3xl px-6 py-24 text-center md:py-32 phone:py-16">
         <p className="text-xs tracking-tighter">CONTACT US</p>
         <h1 className="mt-8 font-serif text-3xl leading-tight md:text-[44px] phone:text-[28px]">
           Tell Us What You&rsquo;re <em>Building</em>.
@@ -97,7 +97,7 @@ export default function Contact() {
 
       <form
         onSubmit={handleSubmit}
-        className="mx-auto max-w-4xl px-6 pb-24 md:px-12"
+        className="mx-auto max-w-4xl px-6 pb-24 md:px-12 phone:pb-16"
       >
         {/* 01 — Request Type */}
         <div className="flex items-center gap-4">

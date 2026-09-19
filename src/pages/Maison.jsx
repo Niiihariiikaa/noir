@@ -48,7 +48,7 @@ export default function Maison() {
       {/* Hero split */}
       <section className="border-b border-hairline">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="flex items-center justify-center p-10 md:border-r md:border-hairline md:p-14">
+          <div className="flex items-center justify-center p-10 md:border-r md:border-hairline md:p-14 phone:p-6 phone:pb-0">
             <img
               src={cover}
               alt="Embossed MAISON FLORALE brand cover over a dried flower photograph"
@@ -56,7 +56,7 @@ export default function Maison() {
             />
           </div>
 
-          <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
+          <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20 phone:px-6 phone:py-12">
             <p className="text-xs tracking-tighter">THE CLIENT</p>
             <h1 className="mt-6 font-serif text-3xl md:text-4xl phone:text-[28px]">MAISON FLORALE</h1>
             <p className="mt-8 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75 phone:text-left">
@@ -79,7 +79,7 @@ export default function Maison() {
 
       {/* Pull-quote */}
       <section className="border-b border-hairline">
-        <div className="mx-auto max-w-3xl px-6 py-24 text-center">
+        <div className="mx-auto max-w-3xl px-6 py-24 text-center phone:py-16">
           <p className="font-serif text-2xl leading-relaxed md:text-[28px] phone:text-[28px]">
             Flowers are not decoration. The brand had to say that before
             anything else did.
@@ -105,7 +105,7 @@ export default function Maison() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div
             id="brand-strategy"
-            className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-b md:border-hairline md:px-16 md:py-20"
+            className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-b md:border-hairline md:px-16 md:py-20 phone:px-6 phone:py-12"
           >
             <h2 className="font-serif text-3xl italic md:text-4xl phone:text-[28px]">
               L&rsquo;Art de la Fleur.
@@ -117,7 +117,7 @@ export default function Maison() {
             </p>
           </div>
 
-          <div className="flex items-center border-b border-hairline px-8 py-16 md:px-16 md:py-20">
+          <div className="flex items-center border-b border-hairline px-8 py-16 md:px-16 md:py-20 phone:px-6 phone:py-12">
             <p className="text-center text-sm uppercase leading-relaxed tracking-tighter text-ink/80 md:text-base">
               Maison Florale&rsquo;s identity is elegant, heritage-rooted, and
               deeply considered &mdash; built to make floral design feel like
@@ -127,7 +127,7 @@ export default function Maison() {
 
           <div
             id="visual-identity"
-            className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-hairline md:px-16 md:py-20"
+            className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-hairline md:px-16 md:py-20 phone:px-6 phone:py-12"
           >
             <div className="flex flex-col md:flex-row md:items-start md:justify-between md:gap-6">
               <p className="text-xl font-normal tracking-tighter">DELIVERABLES</p>
@@ -189,7 +189,7 @@ export default function Maison() {
       {/* Brand Colors + Typography */}
       <section className="border-b border-hairline">
         <div className="grid grid-cols-1 md:min-h-169.5 md:grid-cols-[3fr_2fr]">
-          <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20 phone:border-b phone:border-hairline phone:py-12">
+          <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20 phone:border-b phone:border-hairline phone:py-12 phone:px-6">
             <p className="text-xl font-normal tracking-tighter">BRAND COLORS</p>
             <div className="mt-13.5 flex phone:mt-8">
               <div className="grid grid-cols-[repeat(4,143px)] gap-10 phone:w-full phone:grid-cols-4 phone:gap-3">
@@ -207,7 +207,7 @@ export default function Maison() {
             </div>
           </div>
 
-          <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20 phone:py-12">
+          <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20 phone:py-12 phone:px-6">
             <p className="text-xl font-normal tracking-tighter">TYPOGRAPHY</p>
 
             <p className="mt-13.5 text-xs tracking-tighter text-ink/50">PRIMARY</p>
