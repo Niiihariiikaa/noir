@@ -75,6 +75,14 @@ export default function VedicSaar() {
               premium and credible to a modern audience discovering spiritual
               guidance for the first time.
             </p>
+            <a
+              href="https://vedic-saar.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-block self-start border border-ink px-4 py-2 text-[11px] tracking-tighter transition-colors hover:bg-ink hover:text-cream"
+            >
+              VIEW LIVE SITE &nbsp;&#8599;
+            </a>
           </div>
         </div>
       </section>
