@@ -120,7 +120,7 @@ function FaqItem({ number, faq, isOpen, onToggle }) {
         }`}
       >
         <div className="overflow-hidden">
-          <p className="max-w-xl pb-7 pl-20 pr-6 text-[15px] leading-relaxed text-ink/75 md:pb-8 md:pl-28 md:pr-10">
+          <p className="max-w-xl pb-7 pl-20 pr-6 text-[15px] leading-relaxed text-ink/75 md:pb-8 md:pl-28 md:pr-10 phone:text-sm">
             {faq.answer}
           </p>
         </div>
@@ -190,7 +190,7 @@ export default function Faqs() {
                       }`}
                     >
                       <span className="w-6 text-xs tracking-tighter">{pad(g + 1)}</span>
-                      <span className="font-serif text-2xl">{group.title}</span>
+                      <span className="font-serif text-2xl phone:text-[28px]">{group.title}</span>
                     </a>
                   );
                 })}
@@ -202,7 +202,7 @@ export default function Faqs() {
                 </p>
                 <Link
                   to="/contact"
-                  className="mt-4 inline-block border border-ink px-5 py-2.5 text-[11px] tracking-tighter transition-colors hover:bg-ink hover:text-cream"
+                  className="mt-4 inline-block border border-ink px-5 py-2.5 text-[11px] tracking-tighter transition-colors hover:bg-ink hover:text-cream phone:text-xs"
                 >
                   ASK US DIRECTLY
                 </Link>
@@ -250,7 +250,7 @@ export default function Faqs() {
 
       <section className="border-b border-ink/60 bg-espresso text-cream">
         <div className="mx-auto max-w-2xl px-6 py-24 text-center">
-          <h2 className="font-serif text-3xl leading-snug md:text-[32px]">
+          <h2 className="font-serif text-3xl leading-snug md:text-[32px] phone:text-[28px]">
             Still have a question?
           </h2>
           <p className="mx-auto mt-6 max-w-md text-sm leading-relaxed text-cream/60">

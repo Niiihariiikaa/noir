@@ -60,8 +60,8 @@ export default function Mettali() {
 
           <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
             <p className="text-xs tracking-tighter">THE CLIENT</p>
-            <h1 className="mt-6 font-serif text-3xl md:text-4xl">METTALI</h1>
-            <p className="mt-8 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75">
+            <h1 className="mt-6 font-serif text-3xl md:text-4xl phone:text-[28px]">METTALI</h1>
+            <p className="mt-8 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75 phone:text-left">
               Mettali is a premium home d&eacute;cor brand built around the
               beauty of metal &mdash; aluminium objects designed to be
               functional and worth looking at. Vases, wine holders,
@@ -70,7 +70,7 @@ export default function Mettali() {
               catalogue that positioned Mettali as a design-led home brand,
               not just another product line.
             </p>
-            <p className="mt-4 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75">
+            <p className="mt-4 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75 phone:text-left">
               Noir built the complete brand identity, website, and product
               catalogue &mdash; a full visual system designed to carry the
               same editorial weight across digital and print.
@@ -82,7 +82,7 @@ export default function Mettali() {
       {/* Pull-quote */}
       <section className="border-b border-hairline">
         <div className="mx-auto max-w-3xl px-6 py-24 text-center">
-          <p className="font-serif text-2xl leading-relaxed md:text-[28px]">
+          <p className="font-serif text-2xl leading-relaxed md:text-[28px] phone:text-[28px]">
             Metal is a material most brands hide. Mettali makes it the point.
             The brand had to say that clearly.
           </p>
@@ -109,7 +109,7 @@ export default function Mettali() {
             id="brand-strategy"
             className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-b md:border-hairline md:px-16 md:py-20"
           >
-            <h2 className="font-serif text-3xl italic md:text-4xl">
+            <h2 className="font-serif text-3xl italic md:text-4xl phone:text-[28px]">
               Form Follows Beauty.
             </h2>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-ink/70">
@@ -133,7 +133,7 @@ export default function Mettali() {
           >
             <div className="flex flex-col md:flex-row md:items-start md:justify-between md:gap-6">
               <p className="text-xl font-normal tracking-tighter">DELIVERABLES</p>
-              <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:mt-0 md:max-w-xs md:text-right">
+              <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:mt-0 md:max-w-xs md:text-right phone:text-left">
                 From the ground up &mdash; a complete brand identity, custom
                 website, and product catalogue built as one connected system.
                 Every deliverable designed to carry the same visual language
@@ -144,11 +144,11 @@ export default function Mettali() {
 
             <div className="mt-10 flex max-w-xs flex-col gap-3 md:ml-auto">
               {deliverableRows.map((row) => (
-                <div key={row[0]} className="flex justify-end gap-3">
+                <div key={row[0]} className="flex justify-end gap-3 phone:flex-wrap phone:justify-start">
                   {row.map((item) => (
                     <span
                       key={item}
-                      className="whitespace-nowrap rounded-xs bg-[#161311] px-4.5 py-2.5 text-center text-[10px] uppercase tracking-[1.5px] text-white"
+                      className="whitespace-nowrap rounded-xs bg-[#161311] px-4.5 py-2.5 text-center text-[10px] uppercase tracking-[1.5px] text-white phone:text-xs"
                     >
                       {item}
                     </span>
@@ -192,17 +192,17 @@ export default function Mettali() {
       {/* Brand Colors + Typography */}
       <section className="border-b border-hairline">
         <div className="grid grid-cols-1 md:min-h-169.5 md:grid-cols-[3fr_2fr]">
-          <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
+          <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20 phone:border-b phone:border-hairline phone:py-12">
             <p className="text-xl font-normal tracking-tighter">BRAND COLORS</p>
-            <div className="mt-13.5 flex w-full">
-              <div className="flex gap-6">
+            <div className="mt-13.5 flex w-full phone:mt-8">
+              <div className="flex gap-6 phone:w-full phone:gap-3">
                 {swatches.map((swatch) => (
-                  <div key={swatch.hex} className="w-25">
+                  <div key={swatch.hex} className="w-25 phone:w-auto phone:min-w-0 phone:flex-1">
                     <div
-                      className="h-80.75 w-full border border-hairline"
+                      className="h-80.75 w-full border border-hairline phone:aspect-[143/323] phone:h-auto"
                       style={{ backgroundColor: swatch.hex }}
                     />
-                    <p className="mt-2 text-xs text-ink/80">{swatch.name}</p>
+                    <p className="mt-2 text-xs leading-snug text-ink/80">{swatch.name}</p>
                     <p className="text-xs text-ink/50">{swatch.hex}</p>
                   </div>
                 ))}
@@ -210,7 +210,7 @@ export default function Mettali() {
             </div>
           </div>
 
-          <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20">
+          <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20 phone:py-12">
             <p className="text-xl font-normal tracking-tighter">TYPOGRAPHY</p>
 
             <p className="mt-13.5 text-xs tracking-tighter text-ink/50">PRIMARY</p>

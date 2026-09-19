@@ -85,7 +85,7 @@ export default function Contact() {
     <section className="border-b border-ink/60">
       <div className="mx-auto max-w-3xl px-6 py-24 text-center md:py-32">
         <p className="text-xs tracking-tighter">CONTACT US</p>
-        <h1 className="mt-8 font-serif text-3xl leading-tight md:text-[44px]">
+        <h1 className="mt-8 font-serif text-3xl leading-tight md:text-[44px] phone:text-[28px]">
           Tell Us What You&rsquo;re <em>Building</em>.
         </h1>
         <p className="mx-auto mt-8 max-w-md text-sm leading-relaxed text-ink/70">
@@ -132,7 +132,7 @@ export default function Contact() {
                   )}
                 </span>
                 <span>
-                  <span className="block font-serif text-lg">{type.title}</span>
+                  <span className="block font-serif text-lg phone:text-xl">{type.title}</span>
                   <span
                     className={`mt-2 block text-sm leading-relaxed ${
                       active ? "text-cream/70" : "text-ink/60"

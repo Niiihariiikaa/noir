@@ -14,11 +14,11 @@ export default function AboutIntro() {
 
         <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
           <p className="text-xs tracking-tighter">ABOUT THE STUDIO</p>
-          <h1 className="mt-6 font-serif text-3xl md:text-4xl">
+          <h1 className="mt-6 font-serif text-3xl md:text-4xl phone:text-[28px]">
             Our Work Is Grounded In <em className="mr-1.5">Strategy</em> And{" "}
             <em>Editorial Discipline</em>.
           </h1>
-          <p className="mt-8 max-w-md text-justify text-sm leading-relaxed text-ink/75">
+          <p className="mt-8 max-w-md text-justify text-sm leading-relaxed text-ink/75 phone:text-left">
             Noir started in New Delhi &mdash; two founders who believed
             design was being sold as decoration when it should be working as
             strategy. We&rsquo;ve built brands for astrology platforms,

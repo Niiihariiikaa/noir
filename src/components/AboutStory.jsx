@@ -18,7 +18,7 @@ export default function AboutStory() {
           className="mx-auto mt-10 aspect-3/2 w-full max-w-md object-cover"
         />
 
-        <p className="mx-auto mt-8 max-w-xl text-justify text-sm leading-relaxed text-ink/70">
+        <p className="mx-auto mt-8 max-w-xl text-justify text-sm leading-relaxed text-ink/70 phone:text-left">
           We&rsquo;ve always been drawn to design &mdash; not as decoration,
           but as something that actually changes how people feel about a
           brand. There are so many businesses out there with real potential

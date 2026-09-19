@@ -18,11 +18,11 @@ export default function Hero() {
             NOiR
           </h1>
           <div className="max-w-2xl md:justify-self-start md:pb-6">
-            <h2 className="font-serif text-2xl leading-snug md:text-[clamp(22px,min(2vw,3.4vh),30px)]">
+            <h2 className="font-serif text-2xl leading-snug md:text-[clamp(22px,min(2vw,3.4vh),30px)] phone:text-[28px]">
               Good design starts with content. A beautiful layout means nothing
               if there&rsquo;s nothing to say.
             </h2>
-            <p className="mt-3 text-justify text-xl leading-5 tracking-tighter text-ink/70">
+            <p className="mt-3 text-justify text-xl leading-5 tracking-tighter text-ink/70 phone:text-left phone:text-sm phone:leading-relaxed">
               We treat every project like a piece of writing &mdash; there&rsquo;s a
               brief, a structure, an argument, and an edit at the end.
               Inspiration matters less than discipline. If the idea is clear,
@@ -51,7 +51,7 @@ export default function Hero() {
           </div>
 
           <div className="md:col-span-2 md:col-start-6 md:pl-6">
-            <p className="text-justify text-sm leading-snug text-ink/80">
+            <p className="text-justify text-sm leading-snug text-ink/80 phone:text-left">
               Good design starts with clarity. A beautiful layout means nothing
               if there&rsquo;s no argument underneath it. At that point,
               it&rsquo;s just decoration.

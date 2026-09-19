@@ -2,7 +2,7 @@
   return (
     <section className="border-b border-ink/60 bg-espresso text-cream">
       <div className="mx-auto max-w-2xl px-6 py-28 text-center">
-        <h2 className="font-serif text-3xl leading-snug md:text-[32px]">
+        <h2 className="font-serif text-3xl leading-snug md:text-[32px] phone:text-[28px]">
           Your brand should do the convincing before you ever say a word. We
           build the kind that does.
         </h2>

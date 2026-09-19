@@ -47,14 +47,15 @@ const projects = [
 function TextCell({ project }) {
   const isRoute = project.href.startsWith("/");
   const buttonClass =
-    "mt-8 inline-block border border-ink px-4 py-2 text-[11px] tracking-tighter transition-colors hover:bg-ink hover:text-cream";
+    "mt-8 inline-block border border-ink px-4 py-2 text-[11px] tracking-tighter transition-colors hover:bg-ink hover:text-cream phone:mt-2.5 phone:whitespace-nowrap phone:border-ink/60 phone:px-1.5 phone:py-1 phone:text-[8px] phone:font-light";
 
+  // Phones show a proportional miniature of the laptop cell.
   return (
-    <div className="flex h-full flex-col justify-between p-5">
-      <p className="text-xs tracking-tighter">{project.code}</p>
+    <div className="flex h-full min-w-0 flex-col justify-between p-5 phone:p-1.5">
+      <p className="text-xs tracking-tighter phone:text-[8px] phone:font-light">{project.code}</p>
       <div>
-        <h3 className="font-serif text-[32px]">{project.name}</h3>
-        <p className="mt-1 text-[15px] text-ink/70">{project.services}</p>
+        <h3 className="font-serif text-[32px] phone:text-[13px] phone:leading-tight">{project.name}</h3>
+        <p className="mt-1 text-[15px] text-ink/70 phone:mt-0.5 phone:text-[8px] phone:font-light phone:leading-snug">{project.services}</p>
         {isRoute ? (
           <Link to={project.href} className={buttonClass}>
             SEE CASE STUDY
@@ -78,12 +79,12 @@ export default function SelectedWork({ hideLabel = false }) {
         </p>
       )}
 
-      <div className="hidden px-16 md:block">
+      <div className="px-[5%] md:px-16">
         <div className="border-x border-ink/60">
           {projects.map((project) => (
             <div
               key={project.code}
-              className="grid h-[min(56vh,33vw)] min-h-80 grid-cols-4 divide-x divide-ink/60 border-b border-ink/60 last:border-b-0"
+              className="grid aspect-[1152/421] grid-cols-4 md:aspect-auto md:h-[min(56vh,33vw)] md:min-h-80 divide-x divide-ink/60 border-b border-ink/60 last:border-b-0"
             >
               {[1, 2, 3, 4].map((col) => {
                 if (col === project.layout.text)
@@ -104,17 +105,8 @@ export default function SelectedWork({ hideLabel = false }) {
           ))}
         </div>
       </div>
-      <div className="hidden h-10 border-t border-ink/60 md:block" />
+      <div className="h-[3.125vw] border-t border-ink/60 md:h-10" />
 
-      {/* Mobile: simple stacked cards */}
-      <div className="md:hidden">
-        {projects.map((project) => (
-          <div key={project.code} className="border-b border-ink/60 last:border-b-0">
-            <img src={project.image} alt={project.alt} className="h-64 w-full object-cover" />
-            <TextCell project={project} />
-          </div>
-        ))}
-      </div>
     </section>
   );
 }

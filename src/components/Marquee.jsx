@@ -11,7 +11,7 @@ export default function Marquee() {
             {sequence.map((phrase, i) => (
               <span
                 key={`${copy}-${i}`}
-                className="whitespace-nowrap px-2 font-serif text-lg text-ink/90"
+                className="whitespace-nowrap px-2 font-serif text-lg text-ink/90 phone:text-xl"
               >
                 {phrase} <span className="px-2">&mdash;</span>
               </span>

@@ -6,9 +6,11 @@ export default function Manifesto() {
       <div className="mx-auto max-w-3xl px-6 py-24 text-center">
         <h2 className="font-serif text-4xl leading-tight md:text-[44px]">
           Good Design <em>Begins</em>
-          <br />
+          {" "}
+          <br className="phone:hidden" />
           When We <em className="mr-1.5">Commit</em> To a
-          <br />
+          {" "}
+          <br className="phone:hidden" />
           <em>Point Of View</em>
         </h2>
 

@@ -58,8 +58,8 @@ export default function Laceys() {
 
           <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
             <p className="text-xs tracking-tighter">THE CLIENT</p>
-            <h1 className="mt-6 font-serif text-3xl md:text-4xl">LACEYS</h1>
-            <p className="mt-8 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75">
+            <h1 className="mt-6 font-serif text-3xl md:text-4xl phone:text-[28px]">LACEYS</h1>
+            <p className="mt-8 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75 phone:text-left">
               Laceys is an artisan caf&eacute; and bakehouse brand built
               around the idea that every visit should feel like a pause
               &mdash; warm, considered, and worth coming back for. The brief
@@ -67,7 +67,7 @@ export default function Laceys() {
               it represented, and a digital presence that made someone want
               to walk in before they&rsquo;d even looked at the menu.
             </p>
-            <p className="mt-4 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75">
+            <p className="mt-4 max-w-149.75 text-justify text-sm leading-relaxed text-ink/75 phone:text-left">
               Noir built the complete brand identity and social direction
               from the ground up &mdash; logo suite, color system,
               typography, and a content framework the team could run with
@@ -80,7 +80,7 @@ export default function Laceys() {
       {/* Pull-quote */}
       <section className="border-b border-hairline">
         <div className="mx-auto max-w-3xl px-6 py-24 text-center">
-          <p className="font-serif text-2xl leading-relaxed md:text-[28px]">
+          <p className="font-serif text-2xl leading-relaxed md:text-[28px] phone:text-[28px]">
             A caf&eacute; brand should make someone feel welcome before
             they&rsquo;ve walked through the door. That was the brief.
           </p>
@@ -107,7 +107,7 @@ export default function Laceys() {
             id="brand-strategy"
             className="flex flex-col justify-center px-8 py-16 md:min-h-100 md:border-r md:border-b md:border-hairline md:px-16 md:py-20"
           >
-            <h2 className="font-serif text-3xl italic md:text-4xl">
+            <h2 className="font-serif text-3xl italic md:text-4xl phone:text-[28px]">
               Made With Care.
             </h2>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-ink/70">
@@ -131,7 +131,7 @@ export default function Laceys() {
           >
             <div className="flex flex-col md:flex-row md:items-start md:justify-between md:gap-6">
               <p className="text-xl font-normal tracking-tighter">DELIVERABLES</p>
-              <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:mt-0 md:max-w-xs md:text-right">
+              <p className="mt-4 text-justify text-sm leading-relaxed text-ink/70 md:mt-0 md:max-w-xs md:text-right phone:text-left">
                 From the ground up &mdash; a complete brand identity and
                 social content system that carries the same warmth offline
                 and online. Every deliverable built as one connected
@@ -141,11 +141,11 @@ export default function Laceys() {
 
             <div className="mt-6 flex max-w-xs flex-col gap-2 md:ml-auto">
               {deliverableRows.map((row) => (
-                <div key={row[0]} className="flex justify-end gap-2">
+                <div key={row[0]} className="flex justify-end gap-2 phone:flex-wrap phone:justify-start">
                   {row.map((item) => (
                     <span
                       key={item}
-                      className="whitespace-nowrap rounded-xs bg-[#161311] px-4.5 py-2 text-center text-[10px] uppercase tracking-[1.5px] text-white"
+                      className="whitespace-nowrap rounded-xs bg-[#161311] px-4.5 py-2 text-center text-[10px] uppercase tracking-[1.5px] text-white phone:text-xs"
                     >
                       {item}
                     </span>
@@ -189,17 +189,17 @@ export default function Laceys() {
       {/* Brand Colors + Typography */}
       <section id="social-direction" className="border-b border-hairline">
         <div className="grid grid-cols-1 md:min-h-169.5 md:grid-cols-[3fr_2fr]">
-          <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20">
+          <div className="flex h-full flex-col px-8 py-16 md:border-r md:border-hairline md:px-16 md:py-20 phone:border-b phone:border-hairline phone:py-12">
             <p className="text-xl font-normal tracking-tighter">BRAND COLORS</p>
-            <div className="mt-13.5 flex">
-              <div className="grid grid-cols-[repeat(4,143px)] gap-10">
+            <div className="mt-13.5 flex phone:mt-8">
+              <div className="grid grid-cols-[repeat(4,143px)] gap-10 phone:w-full phone:grid-cols-4 phone:gap-3">
                 {swatches.map((swatch) => (
                   <div key={swatch.hex}>
                     <div
-                      className="h-80.75 w-35.75 border border-hairline"
+                      className="h-80.75 w-35.75 border border-hairline phone:aspect-[143/323] phone:h-auto phone:w-full"
                       style={{ backgroundColor: swatch.hex }}
                     />
-                    <p className="mt-2 text-xs text-ink/80">{swatch.name}</p>
+                    <p className="mt-2 text-xs leading-snug text-ink/80">{swatch.name}</p>
                     <p className="text-xs text-ink/50">{swatch.hex}</p>
                   </div>
                 ))}
@@ -207,7 +207,7 @@ export default function Laceys() {
             </div>
           </div>
 
-          <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20">
+          <div className="flex h-full flex-col px-8 py-16 md:px-16 md:py-20 phone:py-12">
             <p className="text-xl font-normal tracking-tighter">TYPOGRAPHY</p>
 
             <p className="mt-13.5 text-xs tracking-tighter text-ink/50">PRIMARY</p>

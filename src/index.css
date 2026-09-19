@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Phone-only styles (below the md breakpoint). */
+@custom-variant phone (@media (width < 48rem));
+
 /* Thin is mapped to the default weight (400) so all font-serif text renders
    in the thin cut; the light cut is available via font-light (300). */
 @font-face {

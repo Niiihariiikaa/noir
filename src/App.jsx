@@ -23,7 +23,7 @@ export default function App() {
               {Array.from({ length: 4 }).map((_, i) => (
                 <span
                   key={`${copy}-${i}`}
-                  className="whitespace-nowrap px-6 text-[11px] tracking-tight"
+                  className="whitespace-nowrap px-6 text-[11px] tracking-tight phone:text-xs"
                 >
                   Booking <em>brand</em> &amp; <em>website</em> projects for Fall 2026!
                 </span>

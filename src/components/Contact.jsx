@@ -15,16 +15,16 @@ export default function Contact() {
 
         <div className="flex flex-col justify-center px-8 py-16 md:px-24 md:py-20">
           <p className="text-xs tracking-tighter">LET&rsquo;S CONNECT</p>
-          <h2 className="mt-6 font-serif text-3xl md:text-4xl">
+          <h2 className="mt-6 font-serif text-3xl md:text-4xl phone:text-[28px]">
             The <em className="mr-1.5">Brief</em> Before The Brand.
           </h2>
-          <p className="mt-8 max-w-md text-justify text-sm leading-relaxed text-ink/75">
+          <p className="mt-8 max-w-md text-justify text-sm leading-relaxed text-ink/75 phone:text-left">
             Tell us what you&rsquo;re building, who it&rsquo;s for, and what&rsquo;s not working
             yet. A few honest questions about your business, your audience, and
             where you&rsquo;re trying to go &mdash; that&rsquo;s where every project with us
             actually starts, long before anything gets designed.
           </p>
-          <p className="mt-4 max-w-md text-justify text-sm leading-relaxed text-ink/75">
+          <p className="mt-4 max-w-md text-justify text-sm leading-relaxed text-ink/75 phone:text-left">
             We read every enquiry personally and reply within a couple of days.
             If it sounds like a fit, we&rsquo;ll set up a quick call to talk it
             through properly.
